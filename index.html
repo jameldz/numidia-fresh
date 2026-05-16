@@ -579,6 +579,78 @@
   .legal-modal-content h3:first-child { margin-top: 0; }
   .legal-modal-content p { font-size: 13px; color: #444; line-height: 1.6; margin: 6px 0; }
   .legal-modal-content ul { font-size: 13px; color: #444; line-height: 1.6; padding-left: 20px; }
+  /* RECEIPT STYLE — Modal validation commande */
+  .receipt {
+    background: white; border: 1px solid #e0e0e0;
+    border-radius: 12px; padding: 18px 16px;
+    font-size: 13px; max-height: 480px; overflow-y: auto;
+  }
+  .receipt-header {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    padding-bottom: 12px; border-bottom: 2px solid #1b5e20;
+    margin-bottom: 14px; gap: 10px;
+  }
+  .receipt-header h3 {
+    margin: 0; color: #1b5e20; font-size: 18px; line-height: 1.1;
+  }
+  .receipt-header .badge-flag { font-size: 10px; color: #888; margin-top: 4px; }
+  .receipt-order-info { text-align: right; flex-shrink: 0; }
+  .receipt-order-info .ref {
+    display: block; color: #c62828; font-size: 14px; font-weight: 700;
+  }
+  .receipt-order-info .date { font-size: 10px; color: #888; }
+  .receipt-section { margin-bottom: 14px; }
+  .receipt-section h4 {
+    font-size: 11px; color: #1b5e20;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    margin: 0 0 6px; padding-bottom: 4px;
+    border-bottom: 1px solid #e8f5e9;
+  }
+  .receipt-table {
+    width: 100%; font-size: 12px; border-collapse: collapse;
+  }
+  .receipt-table td { padding: 3px 0; vertical-align: top; }
+  .receipt-table td:first-child { color: #777; width: 33%; }
+  .receipt-table td:last-child { font-weight: 600; color: #2c2c2c; }
+  .receipt-products { width: 100%; border-collapse: collapse; }
+  .receipt-products th {
+    text-align: left; font-size: 10px; color: #888;
+    text-transform: uppercase; padding: 6px 6px 6px 0;
+    border-bottom: 1px solid #ddd; font-weight: 600;
+  }
+  .receipt-products th.right { text-align: right; }
+  .receipt-products th.center { text-align: center; }
+  .receipt-products td {
+    padding: 8px 6px 8px 0;
+    border-bottom: 1px solid #f5f5f5; font-size: 12px; vertical-align: top;
+  }
+  .receipt-products td.right { text-align: right; font-weight: 700; color: #1b5e20; white-space: nowrap; }
+  .receipt-products td.center { text-align: center; font-weight: 700; }
+  .receipt-totals {
+    background: linear-gradient(135deg, #f1f8e9, #fff8e1);
+    padding: 12px 14px; border-radius: 10px;
+    margin-top: 14px;
+  }
+  .receipt-totals .row {
+    display: flex; justify-content: space-between;
+    padding: 3px 0; font-size: 13px;
+  }
+  .receipt-totals .row.big {
+    font-size: 17px; font-weight: 800; color: #1b5e20;
+    border-top: 1.5px dashed #c8e6c9;
+    margin-top: 8px; padding-top: 8px;
+  }
+  .receipt-payment {
+    background: #fff8e1; border-left: 3px solid #fbc02d;
+    padding: 8px 12px; border-radius: 6px;
+    margin-top: 12px; font-size: 12px;
+  }
+  .preco-badge {
+    background: #ef6c00; color: white;
+    font-size: 9px; font-weight: 700;
+    padding: 1px 6px; border-radius: 6px;
+    margin-left: 4px; vertical-align: middle;
+  }
   /* FIELD VALIDATION */
   input.is-invalid {
     border-color: #c62828 !important;
@@ -1200,7 +1272,7 @@
     <h2 style="margin-top:0; color:#1b5e20;" id="modalOrderTitle">✅ Commande prête !</h2>
     <div id="modalOrderNumber" style="background: linear-gradient(135deg, #e8f5e9, #fff8e1); border-left: 4px solid #2e7d32; padding: 10px 14px; border-radius: 10px; margin-bottom: 14px; font-size: 13px; color: #1b5e20;"></div>
     <p>Envoyez-la sur WhatsApp — vous recevrez votre <strong>lien de paiement CB sécurisé</strong> sous quelques minutes.</p>
-    <div id="modalRecap" style="background:#f5f5f5; padding:14px; border-radius:12px; font-size:13px; white-space:pre-wrap; max-height:300px; overflow-y:auto; font-family:monospace;"></div>
+    <div id="modalRecap"></div>
     <a id="waLink" href="#" target="_blank" style="display:block; margin-top:16px; background:linear-gradient(135deg,#25d366,#128c7e); color:white; padding:14px; border-radius:14px; text-align:center; text-decoration:none; font-weight:700; font-size:16px;">📲 Envoyer sur WhatsApp</a>
     <a id="smsLink" href="#" style="display:block; margin-top:8px; text-align:center; color:#666; font-size:13px;">Pas de WhatsApp ? Envoyer par SMS</a>
   </div>
@@ -2147,9 +2219,127 @@ function buildMessage() {
   return lines.join('\n');
 }
 
+const ESTAB_LABELS = {
+  redistributeur: '📦 Grossiste re-distributeur',
+  centrale: '🏬 Centrale d\'achat',
+  importateur: '🚢 Importateur / Négociant',
+  marche: '🛒 Marché de gros / Carreau',
+  cooperative: '🌾 Coopérative',
+  industrie: '🏭 Agroalimentaire / Transformateur'
+};
+
+function buildHTMLRecap() {
+  const orderNum = state.currentOrderNumber || (state.currentOrderNumber = generateOrderNumber());
+  const date = new Date().toLocaleString('fr-FR', { dateStyle: 'short', timeStyle: 'short' });
+  const fv = id => (document.getElementById(id)?.value || '').trim() || '—';
+  const estType = ESTAB_LABELS[state.est] || '—';
+
+  const stockIds = Object.keys(state.selected).filter(id => state.selected[id].mode !== 'precommande');
+  const precoIds = Object.keys(state.selected).filter(id => state.selected[id].mode === 'precommande');
+
+  let rows = '';
+  for (const id of stockIds) {
+    const p = CATALOG.find(x => x.id === id);
+    const sel = state.selected[id];
+    const line = p.palettePrice * sel.qty;
+    rows += `<tr><td><strong>${p.emoji} ${p.name}</strong><br><span style="font-size:10px; color:#888;">🇩🇿 ${p.origin} · palette ${p.paletteWeight} kg</span></td><td class="center">${sel.qty}</td><td class="right">${fmtPrice(line)}</td></tr>`;
+  }
+  for (const id of precoIds) {
+    const p = CATALOG.find(x => x.id === id);
+    const sel = state.selected[id];
+    const price = Math.round(p.palettePrice * 0.93);
+    const line = price * sel.qty;
+    rows += `<tr><td><strong>${p.emoji} ${p.name}</strong><span class="preco-badge">PRÉCO −7%</span><br><span style="font-size:10px; color:#888;">🇩🇿 ${p.origin} · palette ${p.paletteWeight} kg</span></td><td class="center">${sel.qty}</td><td class="right">${fmtPrice(line)}</td></tr>`;
+  }
+
+  const subtotalStock = getSubtotalStock();
+  const subtotalPreco = getSubtotalPrecommande();
+  const subtotal = subtotalStock + subtotalPreco;
+  const count = getPaletteCount();
+  const livraison = count >= 2 ? 0 : 80;
+  const tva = subtotal * 0.055;
+  const ttc = subtotal + tva + livraison;
+  const precoTTC = subtotalPreco * 1.055;
+  const acomptePreco = precoTTC * 0.10;
+  const soldePreco = precoTTC * 0.90;
+  const aPayerMaintenant = subtotalStock * 1.055 + livraison + acomptePreco;
+
+  const payLabel = state.pay === 'cb'
+    ? '💳 Carte bancaire en ligne · paiement immédiat'
+    : state.pay === 'sepa'
+      ? '⚡ Virement SEPA Instant · paiement immédiat'
+      : '<span style="color:#c62828;">⚠️ Mode de paiement non sélectionné</span>';
+
+  const compl = fv('compl');
+
+  return `
+    <div class="receipt">
+      <div class="receipt-header">
+        <div>
+          <h3>Numidia Fresh</h3>
+          <div class="badge-flag">🇩🇿 Grossiste fruits & légumes</div>
+        </div>
+        <div class="receipt-order-info">
+          <span class="ref">${orderNum}</span>
+          <span class="date">${date}</span>
+        </div>
+      </div>
+
+      <div class="receipt-section">
+        <h4>🏬 Acheteur</h4>
+        <table class="receipt-table">
+          <tr><td>Type</td><td>${estType}</td></tr>
+          <tr><td>Raison sociale</td><td>${fv('bizName')}</td></tr>
+          <tr><td>Contact</td><td>${fv('contactName')}</td></tr>
+          <tr><td>SIRET / TVA</td><td>${fv('siret')}</td></tr>
+          <tr><td>Téléphone</td><td>${fv('phone')}</td></tr>
+          <tr><td>Email</td><td>${fv('email')}</td></tr>
+        </table>
+      </div>
+
+      <div class="receipt-section">
+        <h4>📍 Livraison</h4>
+        <table class="receipt-table">
+          <tr><td>Adresse</td><td>${fv('addr')}<br>${fv('cp') === '—' ? '' : fv('cp')} ${fv('ville') === '—' ? '' : fv('ville')}</td></tr>
+          ${compl !== '—' ? `<tr><td>Accès</td><td>${compl}</td></tr>` : ''}
+          <tr><td>Date souhaitée</td><td>${state.dateChoice || '—'}</td></tr>
+          <tr><td>Créneau</td><td>${fv('creneau')}</td></tr>
+        </table>
+      </div>
+
+      <div class="receipt-section">
+        <h4>📦 Commande</h4>
+        <table class="receipt-products">
+          <thead><tr><th>Produit</th><th class="center">Qté</th><th class="right">Total HT</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+
+      <div class="receipt-totals">
+        <div class="row"><span>Sous-total HT</span><span>${fmtPrice(subtotal)}</span></div>
+        ${subtotalPreco > 0 ? `<div class="row" style="color:#ef6c00; font-size:12px;"><span>↳ dont précommande HT (−7 %)</span><span>${fmtPrice(subtotalPreco)}</span></div>` : ''}
+        <div class="row"><span>TVA 5,5 % (alimentaire)</span><span>${fmtPrice(tva)}</span></div>
+        <div class="row"><span>Livraison</span><span>${livraison === 0 ? 'Offerte ✨ (≥ 2 palettes)' : fmtPrice(livraison)}</span></div>
+        <div class="row big"><span>TOTAL TTC</span><span>${fmtPrice(ttc)}</span></div>
+        ${subtotalPreco > 0 ? `
+          <div style="margin-top: 10px; padding-top: 10px; border-top: 1.5px dashed #c8e6c9;">
+            <div class="row" style="background:#fff3e0; padding:6px 10px; border-radius:6px; color:#ef6c00; font-weight:700;"><span>⚡ À payer maintenant</span><span>${fmtPrice(aPayerMaintenant)}</span></div>
+            <div class="row" style="font-size:11px; color:#888;"><span>↳ stock TTC + livraison + 10 % acompte précommande</span><span></span></div>
+            <div class="row" style="background:#fff8e1; padding:6px 10px; border-radius:6px; color:#6d4c00; margin-top: 4px;"><span>⏳ Solde précommande (au déclenchement conteneur)</span><span>${fmtPrice(soldePreco)}</span></div>
+          </div>
+        ` : ''}
+      </div>
+
+      <div class="receipt-payment">
+        <strong>Mode de paiement :</strong> ${payLabel}
+      </div>
+    </div>
+  `;
+}
+
 document.getElementById('validateBtn').addEventListener('click', () => {
   const msg = buildMessage();
-  document.getElementById('modalRecap').textContent = msg;
+  document.getElementById('modalRecap').innerHTML = buildHTMLRecap();
   document.getElementById('modalOrderNumber').innerHTML = '📋 Référence commande : <strong style="font-size:15px;">' + state.currentOrderNumber + '</strong><br><span style="font-size:11px; color:#666;">À rappeler dans toute correspondance · Émis le ' + new Date().toLocaleString('fr-FR', { dateStyle: 'short', timeStyle: 'short' }) + '</span>';
   const encoded = encodeURIComponent(msg);
   document.getElementById('waLink').href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encoded}`;

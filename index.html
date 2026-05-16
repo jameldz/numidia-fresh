@@ -1,0 +1,2630 @@
+<!DOCTYPE html>
+<!-- saved from url=(0231)file:///Users/user/Library/Application%20Support/Claude/local-agent-mode-sessions/e58b9b7b-45fd-44c1-ab3b-a95b72c1a842/6beed1ad-5cb3-4fbe-90ab-545bf31449ef/local_f44e87cd-a6fd-4ba1-90b0-12273f05b4c7/outputs/numidia-fresh-final.html -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content">
+<title>Numidia Fresh · Grossiste premium · Origine Algérie 🇩🇿</title>
+<style>
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(180deg, #fff8e7 0%, #f1f8e9 50%, #fff8e7 100%);
+    min-height: 100vh; color: #2c2c2c; line-height: 1.5; padding-bottom: 120px;
+  }
+  .wrap { max-width: 540px; margin: 0 auto; padding: 16px; }
+
+  .header {
+    text-align: center; padding: 28px 16px 22px;
+    background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 45%, #c62828 100%);
+    color: white; border-radius: 0 0 28px 28px;
+    margin: -16px -16px 20px;
+    box-shadow: 0 4px 16px rgba(27, 94, 32, 0.3);
+    position: relative; overflow: hidden;
+  }
+  .header::after {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(circle at 80% 20%, rgba(255,255,255,0.18), transparent 50%);
+    pointer-events: none;
+  }
+  .header .badges { font-size: 38px; margin-bottom: 6px; letter-spacing: 6px; }
+  .header h1 { margin: 0; font-size: 32px; font-weight: 800; text-shadow: 0 2px 10px rgba(0,0,0,0.25); letter-spacing: 0.5px; }
+  .header .subtitle { font-size: 13px; opacity: 0.95; margin-top: 6px; font-weight: 500; }
+  .header .flag {
+    margin-top: 12px; background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(4px); border-radius: 14px; padding: 8px 16px;
+    font-size: 13px; display: inline-block; font-weight: 600;
+  }
+  .header .minorder {
+    margin-top: 10px; background: #c62828; color: white;
+    padding: 6px 14px; border-radius: 20px;
+    display: inline-block; font-size: 13px; font-weight: 700;
+    letter-spacing: 0.3px;
+  }
+
+  .step {
+    background: white; border-radius: 20px;
+    padding: 22px 18px 20px; margin-bottom: 16px;
+    box-shadow: 0 2px 12px rgba(27, 94, 32, 0.08);
+    border: 1px solid #e8f5e9; position: relative;
+  }
+  .step-number {
+    position: absolute; top: -14px; left: 18px;
+    background: linear-gradient(135deg, #2e7d32, #c62828);
+    color: white; width: 34px; height: 34px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 14px;
+    box-shadow: 0 2px 8px rgba(27, 94, 32, 0.35);
+  }
+  .step h2 { margin: 4px 0 14px; font-size: 18px; font-weight: 700; color: #1b5e20; padding-left: 30px; }
+
+  label.lbl { display: block; font-size: 13px; font-weight: 600; color: #555; margin: 10px 0 6px; }
+  input[type=text], input[type=tel], input[type=email], input[type=date], input[type=number], select, textarea {
+    width: 100%; padding: 12px 14px; font-size: 15px;
+    border: 1.5px solid #e0e0e0; border-radius: 12px;
+    background: #fafafa; transition: all 0.2s; font-family: inherit;
+  }
+  input:focus, select:focus, textarea:focus {
+    outline: none; border-color: #2e7d32; background: white;
+    box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.15);
+  }
+  textarea { resize: vertical; min-height: 70px; }
+  .required { color: #c62828; }
+
+  .tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 8px; }
+  .tile {
+    background: #fafafa; border: 2px solid #e8e8e8; border-radius: 14px;
+    padding: 14px 10px; text-align: center; cursor: pointer;
+    transition: all 0.2s; font-size: 13px; font-weight: 600;
+  }
+  .tile:hover { border-color: #a5d6a7; background: #f1f8e9; }
+  .tile.active { border-color: #2e7d32; background: linear-gradient(135deg, #e8f5e9, #f1f8e9); color: #1b5e20; }
+  .tile .emj { font-size: 28px; display: block; margin-bottom: 4px; }
+  /* Variante compacte pour #estTiles */
+  #estTiles { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+  #estTiles .tile {
+    padding: 7px 12px; border-radius: 20px;
+    font-size: 12.5px; text-align: left;
+    display: inline-flex; align-items: center; gap: 6px;
+    border-width: 1.5px;
+  }
+  #estTiles .tile .emj {
+    font-size: 15px; display: inline; margin: 0;
+  }
+
+  .catalog-search { display: flex; gap: 8px; margin-bottom: 14px; }
+  .catalog-search input { flex: 1; }
+  .filter-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+  .chip {
+    background: #f1f8e9; border: 1px solid #c8e6c9;
+    padding: 6px 12px; border-radius: 20px; font-size: 12px;
+    cursor: pointer; font-weight: 600; color: #2e7d32; transition: all 0.2s;
+  }
+  .chip.active { background: #2e7d32; color: white; border-color: #2e7d32; }
+
+  .products { display: grid; gap: 12px; }
+  .product {
+    background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+    border: 1.5px solid #e8f5e9; border-radius: 16px;
+    padding: 14px; transition: all 0.25s; position: relative; overflow: hidden;
+  }
+  .product.active {
+    border-color: #2e7d32;
+    box-shadow: 0 4px 16px rgba(46, 125, 50, 0.18);
+    background: linear-gradient(135deg, #ffffff 0%, #f1f8e9 100%);
+  }
+  .product.rupture { background: #f5f5f5; }
+  .product.rupture .product-emoji,
+  .product.rupture .product-name,
+  .product.rupture .product-origin,
+  .product.rupture .product-quality,
+  .product.rupture .palette-info { opacity: 0.55; }
+  .product.rupture .interest-btn { opacity: 1; }
+  .product.compact {
+    display: flex; align-items: center; gap: 12px;
+    padding: 10px 14px; min-height: auto;
+  }
+  .product.compact .product-emoji-mini {
+    font-size: 26px; background: #eeeeee; border-radius: 10px;
+    padding: 4px 8px; flex-shrink: 0;
+  }
+  .product.compact .compact-info-text { flex: 1; min-width: 0; }
+  .product.compact .product-name-mini {
+    font-weight: 700; font-size: 13px; color: #555;
+    margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .product.compact .product-origin-mini {
+    font-size: 11px; color: #888;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .product.compact .rupture-pill {
+    background: #c62828; color: white;
+    padding: 3px 9px; border-radius: 12px;
+    font-size: 10px; font-weight: 700;
+    flex-shrink: 0;
+  }
+  .section-divider {
+    text-align: center; padding: 10px 14px;
+    margin: 4px 0 2px; font-size: 12px;
+    font-weight: 800; letter-spacing: 1.2px;
+    border-radius: 12px;
+  }
+  .section-divider.in-stock {
+    background: linear-gradient(135deg, #c8e6c9, #e8f5e9);
+    color: #1b5e20; border: 1.5px solid #66bb6a;
+  }
+  .section-divider.rupture {
+    background: linear-gradient(135deg, #ffcdd2, #ffebee);
+    color: #c62828; border: 1.5px solid #ef9a9a;
+    margin-top: 18px;
+  }
+  .section-divider.collapsible {
+    cursor: pointer; user-select: none;
+    transition: all 0.2s;
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+  }
+  .section-divider.collapsible:hover { filter: brightness(1.05); transform: translateY(-1px); }
+  .section-divider .arrow {
+    font-size: 14px; transition: transform 0.2s;
+  }
+  .section-divider.collapsible.expanded .arrow { transform: rotate(180deg); }
+  .rupture-badge {
+    position: absolute; top: 10px; right: 10px;
+    background: #c62828; color: white;
+    padding: 4px 12px; border-radius: 20px;
+    font-size: 11px; font-weight: 800; letter-spacing: 0.5px;
+    box-shadow: 0 2px 6px rgba(198,40,40,0.3);
+    z-index: 2;
+  }
+  .info-btn {
+    position: absolute; top: 10px; right: 10px;
+    background: #fff8e1; border: 1.5px solid #fbc02d;
+    color: #ef6c00; width: 30px; height: 30px;
+    border-radius: 50%; font-size: 14px; font-weight: 700;
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
+    transition: all 0.2s; z-index: 1;
+  }
+  .info-btn:hover { background: #fff3c4; transform: scale(1.08); }
+  .product.rupture .info-btn { display: none; }
+
+  .product-head { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; padding-right: 36px; }
+  .product-emoji {
+    font-size: 38px; line-height: 1;
+    background: #f1f8e9; border-radius: 14px; padding: 6px 10px; flex-shrink: 0;
+  }
+  .product-info { flex: 1; min-width: 0; }
+  .product-name { font-weight: 700; font-size: 16px; color: #2c2c2c; margin: 0; }
+  .product-origin { font-size: 12px; color: #c62828; margin-top: 2px; font-weight: 600; }
+  .product-quality {
+    display: inline-block; background: #fff3e0; color: #e65100;
+    font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 8px;
+    margin-top: 4px; letter-spacing: 0.3px;
+  }
+  .cert-badges { display: inline-flex; gap: 4px; margin-top: 4px; flex-wrap: wrap; }
+  .cert-badge {
+    background: #e8f5e9; color: #1b5e20;
+    font-size: 9px; font-weight: 700; padding: 2px 6px; border-radius: 6px;
+  }
+
+  .palette-info {
+    background: linear-gradient(135deg, #e8f5e9, #fff8e1);
+    border: 1.5px dashed #2e7d32; border-radius: 12px;
+    padding: 10px 14px; margin-bottom: 10px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .palette-info .pal-icon { font-size: 30px; line-height: 1; }
+  .palette-info .pal-spec { flex: 1; font-size: 12px; color: #555; min-width: 0; }
+  .palette-info .pal-spec strong { color: #1b5e20; font-size: 13px; display: block; }
+  .palette-info .pal-spec .pal-detail { color: #777; font-size: 11px; margin-top: 2px; }
+  .palette-info .pal-price {
+    font-size: 18px; font-weight: 800; color: #c62828;
+    background: white; padding: 6px 12px; border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    text-align: right; flex-shrink: 0;
+  }
+  .palette-info .pal-price .pal-per-kg {
+    display: block; font-size: 10px; color: #999; font-weight: 600; margin-top: 1px;
+  }
+
+  .qty-row {
+    display: flex; align-items: center; justify-content: space-between;
+    background: #fafafa; border-radius: 12px; padding: 8px 12px;
+  }
+  .qty-label { font-size: 13px; color: #666; font-weight: 600; }
+  .qty-controls { display: flex; align-items: center; gap: 8px; }
+  .qty-btn {
+    width: 34px; height: 34px; border-radius: 10px;
+    border: none; background: white; color: #1b5e20; font-size: 20px; font-weight: 700;
+    cursor: pointer; box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    display: flex; align-items: center; justify-content: center; transition: all 0.15s;
+  }
+  .qty-btn:hover { background: #e8f5e9; }
+  .qty-btn:active { transform: scale(0.92); }
+  .qty-input {
+    width: 56px; text-align: center; font-size: 16px; font-weight: 700;
+    border: 1.5px solid #e0e0e0; border-radius: 10px; padding: 6px; background: white;
+  }
+  .line-total {
+    font-weight: 700; color: #1b5e20; font-size: 15px;
+    background: linear-gradient(135deg, #fff3e0, #fff8e1);
+    padding: 4px 10px; border-radius: 10px;
+  }
+  .interest-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #ff1744 0%, #ff5722 50%, #ff9100 100%);
+    color: white;
+    padding: 13px 14px;
+    border: none; border-radius: 12px;
+    font-size: 14px; font-weight: 800;
+    cursor: pointer; transition: all 0.2s;
+    margin-top: 4px;
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    box-shadow: 0 4px 14px rgba(255, 23, 68, 0.45);
+    animation: pulseInterest 2.2s ease-in-out infinite;
+  }
+  @keyframes pulseInterest {
+    0%, 100% { transform: scale(1); box-shadow: 0 4px 14px rgba(255, 23, 68, 0.45); }
+    50% { transform: scale(1.03); box-shadow: 0 8px 24px rgba(255, 23, 68, 0.7); }
+  }
+  .interest-btn:hover { transform: scale(1.04); animation-play-state: paused; }
+  .interest-btn:active { transform: scale(0.98); }
+
+  /* PRÉCOMMANDE CONTENEUR */
+  .section-divider.precommande-section {
+    background: linear-gradient(135deg, #ffe0b2, #fff3e0);
+    color: #e65100; border: 1.5px solid #fb8c00;
+    margin-top: 14px;
+  }
+  .product.precommande {
+    border-color: #fb8c00; border-width: 2px;
+    background: linear-gradient(135deg, #fff8f1 0%, #fffbf5 100%);
+  }
+  .precommande-badge {
+    position: absolute; top: 10px; right: 10px;
+    background: linear-gradient(135deg, #ef6c00, #fb8c00); color: white;
+    padding: 4px 12px; border-radius: 20px;
+    font-size: 10px; font-weight: 800; letter-spacing: 0.5px;
+    box-shadow: 0 2px 6px rgba(239,108,0,0.3); z-index: 2;
+  }
+  .progress-block {
+    background: #fff8e1; border-radius: 12px;
+    padding: 12px 14px; margin: 10px 0;
+  }
+  .progress-label {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-size: 12px; color: #6d4c00; margin-bottom: 6px;
+  }
+  .progress-label strong { color: #e65100; font-size: 14px; }
+  .progress-bar {
+    background: #ffe0b2; border-radius: 20px; height: 10px;
+    overflow: hidden; position: relative;
+  }
+  .progress-fill {
+    background: linear-gradient(90deg, #ef6c00, #fb8c00);
+    height: 100%; border-radius: 20px;
+    transition: width 0.4s; min-width: 4%;
+  }
+  .progress-deadline {
+    font-size: 11px; color: #c62828;
+    margin-top: 6px; font-weight: 600; text-align: right;
+  }
+  .precommande-discount-pill {
+    display: inline-block;
+    background: #c62828; color: white;
+    padding: 2px 8px; border-radius: 10px;
+    font-size: 10px; font-weight: 700;
+    margin-left: 6px;
+  }
+  .sample-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #43a047, #66bb6a);
+    color: white;
+    padding: 4px 10px; border-radius: 14px;
+    font-size: 10px; font-weight: 700;
+    letter-spacing: 0.3px; margin-top: 6px;
+    box-shadow: 0 2px 6px rgba(67,160,71,0.25);
+  }
+  .pal-price.precommande-price-block .original-price {
+    text-decoration: line-through; color: #999; font-size: 12px;
+    display: block; margin-bottom: 2px;
+  }
+
+  .info-box {
+    background: linear-gradient(135deg, #fff8e1, #fffde7);
+    border-left: 4px solid #fbc02d; border-radius: 12px;
+    padding: 12px 14px; font-size: 13px; color: #6d4c00; margin: 12px 0;
+  }
+  .info-box strong { color: #ef6c00; }
+  .info-box.algerie {
+    background: linear-gradient(135deg, #ffebee, #e8f5e9);
+    border-left-color: #c62828; color: #1b5e20;
+  }
+  .info-box.algerie strong { color: #c62828; }
+
+  .pay-tile {
+    border: 2px solid #e0e0e0; border-radius: 14px; padding: 12px 14px;
+    cursor: pointer; transition: all 0.2s;
+    display: flex; align-items: center; gap: 12px;
+    background: #fafafa; margin-bottom: 8px;
+  }
+  .pay-tile:hover { border-color: #a5d6a7; }
+  .pay-tile.active { border-color: #2e7d32; background: #f1f8e9; }
+  .pay-tile .pay-emj { font-size: 28px; }
+  .pay-tile .pay-name { font-weight: 700; }
+  .pay-tile .pay-desc { font-size: 12px; color: #777; }
+  .pay-tile .pay-tag {
+    display: inline-block; background: #c62828; color: white;
+    font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 8px;
+    margin-left: 6px; letter-spacing: 0.3px; vertical-align: middle;
+  }
+
+  .date-pick { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-top: 8px; }
+  .date-btn {
+    background: #fafafa; border: 1.5px solid #e0e0e0; border-radius: 10px;
+    padding: 8px 4px; cursor: pointer; text-align: center;
+    transition: all 0.2s; font-size: 11px;
+  }
+  .date-btn.active { border-color: #2e7d32; background: #e8f5e9; color: #1b5e20; font-weight: 700; }
+  .date-btn .d-day { display: block; font-weight: 700; font-size: 12px; }
+  .date-btn .d-num { display: block; font-size: 17px; font-weight: 800; margin-top: 1px; }
+
+  .summary-bar {
+    position: fixed; bottom: 0; left: 0; right: 0;
+    background: white; border-top: 1px solid #e0e0e0;
+    padding: 12px 16px; padding-bottom: max(12px, env(safe-area-inset-bottom));
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.08); z-index: 100;
+  }
+  .summary-bar-inner { max-width: 540px; margin: 0 auto; display: flex; align-items: center; gap: 12px; }
+  .summary-info { flex: 1; }
+  .summary-count { font-size: 12px; color: #777; }
+  .summary-total { font-size: 22px; font-weight: 800; color: #1b5e20; line-height: 1.1; }
+  .validate-btn {
+    background: linear-gradient(135deg, #25d366, #128c7e);
+    color: white; border: none; padding: 14px 18px; border-radius: 14px;
+    font-size: 15px; font-weight: 700; cursor: pointer;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
+    display: flex; align-items: center; gap: 8px; transition: all 0.2s;
+  }
+  .validate-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(37, 211, 102, 0.45); }
+  .validate-btn:active { transform: translateY(0); }
+  .validate-btn:disabled { background: #bdbdbd; box-shadow: none; cursor: not-allowed; opacity: 0.7; }
+
+  .totals { background: linear-gradient(135deg, #f1f8e9, #fff8e1); border-radius: 14px; padding: 14px; margin-top: 8px; }
+  .totals .row { display: flex; justify-content: space-between; padding: 4px 0; font-size: 14px; }
+  .totals .row.big { font-size: 19px; font-weight: 800; color: #1b5e20; border-top: 1.5px dashed #c8e6c9; margin-top: 8px; padding-top: 10px; }
+
+  .selected-list { font-size: 13px; color: #555; }
+  .selected-list .li { padding: 4px 0; border-bottom: 1px dashed #eee; display: flex; justify-content: space-between; gap: 8px; }
+  .selected-list .li:last-child { border-bottom: none; }
+
+  /* MODAL */
+  .modal-bg {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.55);
+    display: none; align-items: center; justify-content: center;
+    z-index: 200; padding: 16px;
+  }
+  .modal-bg.show { display: flex; }
+  .modal {
+    background: white; border-radius: 20px; padding: 24px 20px;
+    max-width: 520px; width: 100%; max-height: 90vh; overflow-y: auto;
+    position: relative;
+  }
+  .modal-close {
+    position: absolute; top: 12px; right: 12px;
+    background: #f0f0f0; border: none; width: 32px; height: 32px;
+    border-radius: 50%; font-size: 18px; cursor: pointer; z-index: 5;
+  }
+
+  /* INFO MODAL */
+  .info-modal-header {
+    display: flex; align-items: center; gap: 14px;
+    margin-bottom: 18px; padding-right: 40px;
+  }
+  .info-modal-emoji {
+    font-size: 50px; background: #f1f8e9;
+    border-radius: 16px; padding: 8px 14px;
+  }
+  .info-modal-title h2 { margin: 0 0 4px; font-size: 20px; color: #1b5e20; }
+  .info-modal-title .origin { font-size: 13px; color: #c62828; font-weight: 600; }
+  .info-section {
+    background: #fafafa; border-radius: 12px;
+    padding: 12px 14px; margin-bottom: 10px;
+    border-left: 3px solid #2e7d32;
+  }
+  .info-section h3 {
+    margin: 0 0 6px; font-size: 13px; color: #1b5e20;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .info-section p { margin: 0; font-size: 14px; color: #444; }
+  .info-section.notes { background: #fff8e1; border-left-color: #fbc02d; }
+  .info-section.notes h3 { color: #ef6c00; }
+
+  /* ADMIN BUTTON & MODAL */
+  .admin-fab {
+    position: fixed; bottom: 90px; right: 16px;
+    background: #1b5e20; color: white;
+    width: 52px; height: 52px; border-radius: 50%;
+    display: none; align-items: center; justify-content: center;
+    font-size: 24px; cursor: pointer;
+    box-shadow: 0 4px 16px rgba(27,94,32,0.4);
+    z-index: 99; border: none;
+  }
+  .admin-fab.visible { display: flex; }
+  .admin-fab:hover { transform: scale(1.08); }
+
+  .admin-modal { max-width: 720px; }
+  .admin-toolbar {
+    display: flex; gap: 8px; flex-wrap: wrap;
+    margin-bottom: 16px;
+    background: #f5f5f5; padding: 10px; border-radius: 12px;
+  }
+  .admin-toolbar button {
+    background: white; border: 1.5px solid #e0e0e0;
+    padding: 8px 14px; border-radius: 10px;
+    cursor: pointer; font-size: 12px; font-weight: 600;
+    transition: all 0.2s;
+  }
+  .admin-toolbar button:hover { border-color: #2e7d32; }
+  .admin-toolbar button.primary { background: #2e7d32; color: white; border-color: #2e7d32; }
+  .admin-toolbar button.danger { background: #c62828; color: white; border-color: #c62828; }
+  .admin-search { flex: 1; min-width: 140px; padding: 8px 12px !important; font-size: 13px !important; }
+
+  .admin-stats {
+    background: #e8f5e9; padding: 8px 12px;
+    border-radius: 10px; margin-bottom: 12px;
+    font-size: 12px; color: #1b5e20; text-align: center;
+  }
+
+  .admin-product {
+    border: 1.5px solid #e8f5e9; border-radius: 14px;
+    padding: 12px; margin-bottom: 8px;
+    background: white; transition: all 0.2s;
+  }
+  .admin-product.rupture { background: #fafafa; border-color: #ffcdd2; }
+  .admin-product-head {
+    display: flex; align-items: center; gap: 10px; margin-bottom: 10px;
+  }
+  .admin-product-emoji { font-size: 24px; }
+  .admin-product-name { font-weight: 700; font-size: 14px; flex: 1; }
+  .admin-stock-toggle {
+    display: flex; align-items: center; gap: 6px;
+    background: #e8f5e9; padding: 4px 10px;
+    border-radius: 20px; font-size: 11px; font-weight: 700;
+    color: #1b5e20; cursor: pointer; user-select: none;
+  }
+  .admin-stock-toggle.off {
+    background: #ffebee; color: #c62828;
+  }
+  .admin-stock-toggle .toggle-dot {
+    width: 14px; height: 14px; background: #2e7d32; border-radius: 50%;
+  }
+  .admin-stock-toggle.off .toggle-dot { background: #c62828; }
+  .admin-fields {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 8px;
+  }
+  .admin-field { display: flex; flex-direction: column; }
+  .admin-field label { font-size: 11px; color: #777; margin-bottom: 3px; font-weight: 600; }
+  .admin-field input {
+    padding: 6px 8px !important; font-size: 12px !important;
+    background: white !important; border-color: #e0e0e0 !important;
+  }
+  .admin-field input.changed { background: #fff8e1 !important; border-color: #fbc02d !important; }
+  .admin-field.full { grid-column: 1 / -1; }
+
+  .draft-banner {
+    background: #fff3e0; border: 1.5px dashed #ef6c00;
+    color: #6d2c00; padding: 10px 14px; border-radius: 12px;
+    font-size: 12px; margin-bottom: 16px; text-align: center;
+  }
+  .draft-banner strong { color: #c62828; }
+  .draft-banner.hidden { display: none; }
+
+  /* FOOTER PROFESSIONNEL */
+  .site-footer {
+    margin-top: 30px; background: #1c1c1c;
+    color: #ccc; border-radius: 20px;
+    padding: 24px 20px; font-size: 13px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  }
+  .footer-trust {
+    display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;
+    margin-bottom: 22px; padding-bottom: 18px;
+    border-bottom: 1px solid #333;
+  }
+  .trust-badge {
+    background: rgba(67,160,71,0.18);
+    border: 1px solid #43a047; color: #a5d6a7;
+    padding: 6px 12px; border-radius: 20px;
+    font-size: 11px; font-weight: 600;
+    display: inline-flex; align-items: center; gap: 4px;
+  }
+  .footer-cols {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px; margin-bottom: 18px;
+  }
+  .footer-col h4 {
+    margin: 0 0 10px; font-size: 13px; color: white;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .footer-col p {
+    margin: 4px 0; font-size: 12px; color: #aaa; line-height: 1.5;
+  }
+  .footer-col a {
+    color: #66bb6a; text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-col a:hover { color: #a5d6a7; text-decoration: underline; }
+  .footer-bottom {
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 11px; color: #777;
+    padding-top: 16px; border-top: 1px solid #333;
+    flex-wrap: wrap; gap: 10px;
+  }
+  .footer-bottom .flag-mention { color: #c62828; font-weight: 700; }
+  .footer-link-list { list-style: none; padding: 0; margin: 0; }
+  .footer-link-list li { margin: 5px 0; }
+  .footer-link-list button {
+    background: none; border: none; padding: 0;
+    color: #66bb6a; cursor: pointer;
+    font-size: 12px; text-align: left; font-family: inherit;
+  }
+  .footer-link-list button:hover { color: #a5d6a7; text-decoration: underline; }
+  .legal-modal-content h3 {
+    color: #1b5e20; font-size: 16px;
+    margin: 18px 0 8px; padding-bottom: 6px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .legal-modal-content h3:first-child { margin-top: 0; }
+  .legal-modal-content p { font-size: 13px; color: #444; line-height: 1.6; margin: 6px 0; }
+  .legal-modal-content ul { font-size: 13px; color: #444; line-height: 1.6; padding-left: 20px; }
+  /* FIELD VALIDATION */
+  input.is-invalid {
+    border-color: #c62828 !important;
+    background: #ffebee !important;
+    box-shadow: 0 0 0 3px rgba(198, 40, 40, 0.12);
+  }
+  input.is-valid {
+    border-color: #2e7d32 !important;
+    background: #f1f8e9 !important;
+  }
+  .field-msg {
+    font-size: 11px; margin: 4px 0 0;
+    display: none; line-height: 1.4;
+  }
+  .field-msg.show { display: block; }
+  .field-msg.error { color: #c62828; }
+  .field-msg.ok { color: #2e7d32; }
+  /* AUTO-COMPLETE ADRESSE */
+  .addr-suggestions {
+    background: white;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 12px;
+    margin-top: 4px;
+    max-height: 280px;
+    overflow-y: auto;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  }
+  .addr-suggestion {
+    padding: 10px 14px;
+    cursor: pointer;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background 0.15s;
+    font-size: 13px;
+  }
+  .addr-suggestion:hover { background: #f1f8e9; }
+  .addr-suggestion:last-child { border-bottom: none; }
+  /* FAQ */
+  .faq-section {
+    background: white; border-radius: 20px;
+    padding: 22px 18px; margin-bottom: 16px;
+    box-shadow: 0 2px 12px rgba(27,94,32,0.08);
+    border: 1px solid #e8f5e9;
+  }
+  .faq-section > h2 {
+    margin: 0 0 14px; font-size: 18px;
+    font-weight: 700; color: #1b5e20;
+  }
+  .faq-item {
+    border-bottom: 1px solid #eee;
+    padding: 14px 0;
+  }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-question {
+    display: flex; justify-content: space-between; align-items: center;
+    cursor: pointer; font-weight: 600;
+    font-size: 14px; color: #2c2c2c;
+    user-select: none; gap: 12px;
+    transition: color 0.15s;
+  }
+  .faq-question:hover { color: #2e7d32; }
+  .faq-question .arrow {
+    font-size: 12px; transition: transform 0.2s;
+    color: #2e7d32; flex-shrink: 0;
+  }
+  .faq-item.open .faq-question .arrow { transform: rotate(180deg); }
+  .faq-answer {
+    font-size: 13px; color: #555; line-height: 1.7;
+    margin-top: 10px; display: none;
+  }
+  .faq-item.open .faq-answer { display: block; }
+  /* POURQUOI NOUS + STATS */
+  .why-section {
+    background: white; border-radius: 20px;
+    padding: 22px 18px; margin-bottom: 16px;
+    box-shadow: 0 2px 12px rgba(27,94,32,0.08);
+    border: 1px solid #e8f5e9;
+  }
+  .why-section > h2 {
+    margin: 0 0 14px; font-size: 18px;
+    font-weight: 700; color: #1b5e20;
+  }
+  .why-cards {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 8px; margin-bottom: 18px;
+  }
+  .why-card {
+    background: linear-gradient(135deg, #f1f8e9, #fff8e1);
+    border: 1px solid #c8e6c9; border-radius: 14px;
+    padding: 12px 10px; text-align: center;
+  }
+  .why-icon { font-size: 28px; margin-bottom: 4px; line-height: 1; }
+  .why-title { font-weight: 800; font-size: 12px; color: #1b5e20; margin: 4px 0 4px; }
+  .why-desc { font-size: 10px; color: #555; line-height: 1.4; }
+  .stats-bar {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 10px; padding-top: 14px;
+    border-top: 1px solid #e8f5e9;
+  }
+  .stat-item { text-align: center; }
+  .stat-num {
+    font-size: 28px; font-weight: 800; color: #c62828; line-height: 1;
+  }
+  .stat-label {
+    font-size: 10px; color: #666; text-transform: uppercase;
+    margin-top: 4px; letter-spacing: 0.5px; font-weight: 600;
+  }
+  /* CALCULATEUR DE MARGE */
+  .calc-section {
+    background: linear-gradient(135deg, #fff8e1, #f1f8e9);
+    border-radius: 20px;
+    padding: 22px 18px; margin-bottom: 16px;
+    box-shadow: 0 2px 12px rgba(27,94,32,0.08);
+    border: 1px solid #c8e6c9;
+  }
+  .calc-section > h2 {
+    margin: 0 0 6px; font-size: 18px;
+    font-weight: 700; color: #1b5e20;
+  }
+  .calc-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 5px 0; font-size: 13px;
+  }
+  .calc-row.big {
+    font-size: 18px; font-weight: 800;
+    color: #c62828;
+    border-top: 1.5px dashed #c8e6c9;
+    padding-top: 10px; margin-top: 6px;
+  }
+  .calc-input-row {
+    display: flex; align-items: center; gap: 10px;
+    margin: 8px 0;
+  }
+  .calc-input-row label { font-size: 12px; flex: 1; color: #555; font-weight: 600; }
+  .calc-input-row input {
+    width: 80px !important; padding: 6px 8px !important;
+    font-size: 14px !important; font-weight: 700;
+    text-align: right;
+  }
+  /* GALERIE ORIGINES */
+  .gallery-section {
+    background: white; border-radius: 20px;
+    padding: 22px 18px; margin-bottom: 16px;
+    box-shadow: 0 2px 12px rgba(27,94,32,0.08);
+    border: 1px solid #e8f5e9;
+  }
+  .gallery-section > h2 {
+    margin: 0 0 14px; font-size: 18px;
+    font-weight: 700; color: #1b5e20;
+  }
+  .gallery-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;
+  }
+  .gallery-item {
+    border-radius: 14px; padding: 22px 12px;
+    text-align: center; color: white;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.35);
+    position: relative; overflow: hidden;
+  }
+  .gallery-item::before {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(135deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.15) 100%);
+    pointer-events: none;
+  }
+  .gallery-emoji {
+    font-size: 38px; display: block;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+  }
+  .gallery-label { font-weight: 700; font-size: 13px; margin-top: 6px; }
+  .gallery-label .sub { font-size: 11px; font-weight: 400; opacity: 0.95; display: block; margin-top: 3px; }
+  /* MODE SOMBRE */
+  .dark-toggle {
+    position: fixed; bottom: 90px; left: 16px;
+    background: #1b5e20; color: white;
+    width: 46px; height: 46px; border-radius: 50%;
+    border: none; font-size: 20px; cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+    z-index: 99; display: flex; align-items: center; justify-content: center;
+    transition: transform 0.2s;
+  }
+  .dark-toggle:hover { transform: scale(1.08); }
+  body.dark-mode { background: linear-gradient(180deg, #1a1a1a 0%, #1f2622 50%, #1a1a1a 100%); }
+  body.dark-mode .dark-toggle { background: #f9a825; color: #1a1a1a; }
+  body.dark-mode .step, body.dark-mode .why-section, body.dark-mode .gallery-section,
+  body.dark-mode .faq-section, body.dark-mode .summary-bar {
+    background: #2a2a2a; border-color: #3d3d3d; color: #e8e8e8;
+  }
+  body.dark-mode .calc-section { background: linear-gradient(135deg, #2a2520, #1f2622); border-color: #3d3d3d; }
+  body.dark-mode .step h2, body.dark-mode .why-section > h2, body.dark-mode .gallery-section > h2,
+  body.dark-mode .faq-section > h2, body.dark-mode .calc-section > h2 { color: #a5d6a7; }
+  body.dark-mode .product { background: #2f2f2f; border-color: #444; color: #e8e8e8; }
+  body.dark-mode .product-name, body.dark-mode .faq-question { color: #f0f0f0; }
+  body.dark-mode .palette-info { background: rgba(102,187,106,0.12); border-color: #43a047; }
+  body.dark-mode .pal-spec strong { color: #a5d6a7; }
+  body.dark-mode .pal-price { background: #3a3a3a; color: #ff8a65; }
+  body.dark-mode .qty-row { background: #333; }
+  body.dark-mode .qty-btn { background: #444; color: #a5d6a7; }
+  body.dark-mode .qty-input { background: #444; color: white; border-color: #555; }
+  body.dark-mode .info-box { background: linear-gradient(135deg, #2a2a1f, #2a2520); color: #e8d77a; }
+  body.dark-mode .info-box.algerie { background: linear-gradient(135deg, #2a1f1f, #1f2622); color: #c8e6c9; }
+  body.dark-mode input, body.dark-mode textarea, body.dark-mode select {
+    background: #1f1f1f; color: #f0f0f0; border-color: #444;
+  }
+  body.dark-mode label.lbl { color: #ccc; }
+  body.dark-mode .tile, body.dark-mode .pay-tile, body.dark-mode .date-btn {
+    background: #333; border-color: #444; color: #e8e8e8;
+  }
+  body.dark-mode .summary-count { color: #aaa; }
+  body.dark-mode .summary-total { color: #a5d6a7; }
+  body.dark-mode .why-card { background: linear-gradient(135deg, #2a2a1f, #1f2622); border-color: #3d3d3d; }
+  body.dark-mode .why-title { color: #a5d6a7; }
+  body.dark-mode .why-desc { color: #bbb; }
+  body.dark-mode .faq-answer { color: #ccc; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  @media (max-width: 380px) {
+    .tiles { grid-template-columns: 1fr; }
+    .date-pick { grid-template-columns: repeat(3, 1fr); }
+    .palette-info { flex-wrap: wrap; }
+    .admin-fields { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="draft-banner" id="draftBanner">
+    🚧 <strong>Brouillon</strong> — Tarifs <strong>indicatifs</strong>, à remplacer par les vrais prix avant mise en ligne. Ajoute <code>?admin=1</code> à l'URL pour éditer.
+  </div>
+
+  <header class="header">
+    <div class="badges">🇩🇿 🌴 🍅</div>
+    <h1>Numidia Fresh</h1>
+    <div class="subtitle">Grossiste premium · Fruits &amp; légumes d'Algérie</div>
+    <div class="flag">🥇 Direct producteur · Qualité Extra</div>
+    <div class="minorder">📦 Vente à partir d'une palette</div>
+  </header>
+
+  <!-- POURQUOI NOUS + STATS LIVE -->
+  <section class="why-section">
+    <h2>🌟 Pourquoi Numidia Fresh ?</h2>
+    <div class="why-cards">
+      <div class="why-card">
+        <div class="why-icon">🇩🇿</div>
+        <div class="why-title">Direct producteur</div>
+        <div class="why-desc">Aucun intermédiaire · Oued Souf, Biskra, Boufarik...</div>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">💰</div>
+        <div class="why-title">Tarifs compétitifs</div>
+        <div class="why-desc">Modèle direct producteur · marge optimisée pour le revendeur</div>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📋</div>
+        <div class="why-title">Conformité totale</div>
+        <div class="why-desc">HACCP · Phyto · DAU · Traçabilité lot</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="step-number">1</div>
+    <h2>Catalogue · Origine 🇩🇿 Algérie</h2>
+    <div class="catalog-search">
+      <input type="text" id="search" placeholder="🔎 Rechercher un produit ou une région...">
+    </div>
+    <div class="filter-chips" id="filters">
+      <div class="chip active" data-cat="all">Tout</div>
+      <div class="chip" data-cat="legume">🥕 Légumes</div>
+      <div class="chip" data-cat="fruit">🍓 Fruits</div>
+      <div class="chip" data-cat="dattes">🌴 Dattes &amp; spécialités</div>
+      <div class="chip" data-cat="aromate">🌿 Aromates</div>
+    </div>
+    <div class="info-box algerie">
+      Cliquez sur <strong>ℹ️</strong> d'un produit pour le détail conditionnement, calibre, conservation et saison.
+    </div>
+    <div style="font-size: 11px; color: #777; padding: 8px 12px; background: #fafafa; border-radius: 8px; margin: 8px 0; line-height: 1.5;">
+      ⚠️ <strong>Tarifs HT</strong> · TVA 5,5 % applicable (produits alimentaires non transformés) · Sujets à variation selon cours du marché et saisonnalité · <strong>Photos non contractuelles</strong> · Calibres et présentations indicatifs.
+    </div>
+    <div class="products" id="productsGrid"><div class="section-divider precommande-section">🚢 PRÉCOMMANDE CONTENEUR · −7% · ACOMPTE 10%</div>
+      <div class="product precommande" data-id="pdt">
+        <div class="precommande-badge">🚢 PRÉCO</div><button class="info-btn" data-info="pdt" title="Voir détails" style="top:42px;">ℹ</button>
+        <div class="product-head">
+          <div class="product-emoji">🥔</div>
+          <div class="product-info">
+            <p class="product-name">Pommes de terre Spunta</p>
+            <div class="product-origin">🇩🇿 Oued Souf 🌾 (El Oued) · Ghoutt</div>
+            <span class="product-quality">Cat. 1 · Sol sablonneux</span>
+            
+          </div>
+        </div>
+        
+        <div class="progress-block">
+          <div class="progress-label">
+            <span>🚢 Conteneur en cours · anonyme</span>
+            <span><strong>0</strong>/22 palettes</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 0%"></div>
+          </div>
+          <div class="progress-deadline">🕐 Compte à rebours 10 jours démarre dès la 1ère précommande · acompte 10 %</div>
+        </div>
+    
+        <div class="palette-info">
+          <div class="pal-icon">📦</div>
+          <div class="pal-spec">
+            <strong>1 palette = 1000 kg</strong>
+            <div class="pal-detail">40 sacs de 25 kg</div>
+          </div>
+          
+          <div class="pal-price" style="text-align:right;">
+            <div style="text-decoration: line-through; color: #999; font-size: 12px;">920,00 €</div>
+            <div>856,00 € <span class="precommande-discount-pill">−7%</span></div>
+            <span class="pal-per-kg">0,86 €/kg</span>
+          </div>
+    
+        </div>
+        
+        <div class="qty-row">
+          <span class="qty-label">Réserver palettes</span>
+          <div class="qty-controls">
+            <button class="qty-btn" data-act="minus">−</button>
+            <input type="number" class="qty-input" value="0" min="0">
+            <button class="qty-btn" data-act="plus">+</button>
+          </div>
+          <span class="line-total">0,00 €</span>
+        </div>
+    
+      </div>
+    
+      <div class="product precommande" data-id="past">
+        <div class="precommande-badge">🚢 PRÉCO</div><button class="info-btn" data-info="past" title="Voir détails" style="top:42px;">ℹ</button>
+        <div class="product-head">
+          <div class="product-emoji">🍉</div>
+          <div class="product-info">
+            <p class="product-name">Pastèques</p>
+            <div class="product-origin">🇩🇿 Oued Souf (El Oued)</div>
+            <span class="product-quality">Sucrée · Brix &gt; 10</span>
+            
+          </div>
+        </div>
+        
+        <div class="progress-block">
+          <div class="progress-label">
+            <span>🚢 Conteneur en cours · anonyme</span>
+            <span><strong>0</strong>/22 palettes</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 0%"></div>
+          </div>
+          <div class="progress-deadline">🕐 Compte à rebours 10 jours démarre dès la 1ère précommande · acompte 10 %</div>
+        </div>
+    
+        <div class="palette-info">
+          <div class="pal-icon">📦</div>
+          <div class="pal-spec">
+            <strong>1 palette = 600 kg</strong>
+            <div class="pal-detail">~60 pastèques en bin</div>
+          </div>
+          
+          <div class="pal-price" style="text-align:right;">
+            <div style="text-decoration: line-through; color: #999; font-size: 12px;">580,00 €</div>
+            <div>539,00 € <span class="precommande-discount-pill">−7%</span></div>
+            <span class="pal-per-kg">0,90 €/kg</span>
+          </div>
+    
+        </div>
+        
+        <div class="qty-row">
+          <span class="qty-label">Réserver palettes</span>
+          <div class="qty-controls">
+            <button class="qty-btn" data-act="minus">−</button>
+            <input type="number" class="qty-input" value="0" min="0">
+            <button class="qty-btn" data-act="plus">+</button>
+          </div>
+          <span class="line-total">0,00 €</span>
+        </div>
+    
+      </div>
+    <div class="section-divider rupture collapsible " id="ruptureToggle">🚫 BIENTÔT DISPONIBLE · 41 produits <span class="arrow">▼</span></div></div>
+    <div class="info-box" style="margin-top: 14px;">
+      📞 <strong>Conteneur complet ?</strong> Tarif négocié : <a href="https://wa.me/33773514284" style="color:#c62828; font-weight:700;">+33 6 00 00 00 00</a>
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="step-number">2</div>
+    <h2>Vos informations</h2>
+    <label class="lbl">Type de structure <span class="required">*</span></label>
+    <div class="tiles" id="estTiles">
+      <div class="tile" data-est="redistributeur"><span class="emj">📦</span>Grossiste re-distributeur</div>
+      <div class="tile" data-est="centrale"><span class="emj">🏬</span>Centrale d'achat</div>
+      <div class="tile" data-est="importateur"><span class="emj">🚢</span>Importateur / Négociant</div>
+      <div class="tile" data-est="marche"><span class="emj">🛒</span>Marché de gros / Carreau</div>
+      <div class="tile" data-est="cooperative"><span class="emj">🌾</span>Coopérative</div>
+      <div class="tile" data-est="industrie"><span class="emj">🏭</span>Agroalimentaire / Transfo.</div>
+    </div>
+    <label class="lbl">Raison sociale <span class="required">*</span></label>
+    <input type="text" id="bizName" placeholder="Ex : Méditerranée Distribution SARL">
+    <label class="lbl">Nom du contact <span class="required">*</span></label>
+    <input type="text" id="contactName" placeholder="Prénom et Nom du responsable achats">
+    <label class="lbl">Numéro SIRET / N° TVA intra</label>
+    <input type="text" id="siret" placeholder="14 chiffres (obligatoire pour la facture)" maxlength="14">
+    <label class="lbl">Téléphone WhatsApp <span class="required">*</span></label>
+    <input type="tel" id="phone" placeholder="06 12 34 56 78">
+    <label class="lbl">Email professionnel <span class="required">*</span></label>
+    <input type="email" id="email" placeholder="achats@masociete.fr">
+    <div class="info-box algerie" style="margin-top: 14px;">
+      ⚠️ <strong>B2B uniquement · Vente à partir d'une palette.</strong> Nous livrons exclusivement aux <strong>grossistes &amp; redistributeurs</strong>.
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="step-number">3</div>
+    <h2>Adresse de livraison</h2>
+    <label class="lbl">Adresse <span class="required">*</span></label>
+    <input type="text" id="addr" placeholder="Quai, n° de hall, rue..."><div class="addr-suggestions" style="display: none;"></div>
+    <div class="two-col">
+      <div>
+        <label class="lbl">Code postal <span class="required">*</span></label>
+        <input type="text" id="cp" placeholder="94550" maxlength="5">
+      </div>
+      <div>
+        <label class="lbl">Ville</label>
+        <input type="text" id="ville" placeholder="Rungis / Marseille...">
+      </div>
+    </div>
+    <label class="lbl">Quai / accès / code</label>
+    <input type="text" id="compl" placeholder="Pavillon B4, quai 12, code portail 1234">
+    <div class="info-box">
+      🚚 Livraison en <strong>palettes complètes</strong>. <strong>Transpalette obligatoire</strong> sur place.
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="step-number">4</div>
+    <h2>Date de livraison souhaitée</h2>
+    <div class="date-pick" id="datePick"><div class="date-btn" data-iso="2026-05-26">
+      <span class="d-day">Mer</span>
+      <span class="d-num">27</span>
+      <span style="font-size:10px; color:#999;">Mai</span>
+    </div><div class="date-btn" data-iso="2026-05-27">
+      <span class="d-day">Jeu</span>
+      <span class="d-num">28</span>
+      <span style="font-size:10px; color:#999;">Mai</span>
+    </div><div class="date-btn" data-iso="2026-05-28">
+      <span class="d-day">Ven</span>
+      <span class="d-num">29</span>
+      <span style="font-size:10px; color:#999;">Mai</span>
+    </div><div class="date-btn" data-iso="2026-05-29">
+      <span class="d-day">Sam</span>
+      <span class="d-num">30</span>
+      <span style="font-size:10px; color:#999;">Mai</span>
+    </div><div class="date-btn" data-iso="2026-05-31">
+      <span class="d-day">Lun</span>
+      <span class="d-num">1</span>
+      <span style="font-size:10px; color:#999;">Juin</span>
+    </div><div class="date-btn" data-iso="2026-06-01">
+      <span class="d-day">Mar</span>
+      <span class="d-num">2</span>
+      <span style="font-size:10px; color:#999;">Juin</span>
+    </div><div class="date-btn" data-iso="2026-06-02">
+      <span class="d-day">Mer</span>
+      <span class="d-num">3</span>
+      <span style="font-size:10px; color:#999;">Juin</span>
+    </div><div class="date-btn" data-iso="2026-06-03">
+      <span class="d-day">Jeu</span>
+      <span class="d-num">4</span>
+      <span style="font-size:10px; color:#999;">Juin</span>
+    </div></div>
+    <label class="lbl">Créneau préféré</label>
+    <select id="creneau">
+      <option value="">Au choix</option>
+      <option>🌅 Très tôt (4h-7h)</option>
+      <option>🌤️ Matin (7h-10h)</option>
+      <option>☀️ Fin de matinée (10h-12h)</option>
+      <option>🌙 Après-midi (14h-18h)</option>
+    </select>
+  </section>
+
+  <section class="step">
+    <div class="step-number">5</div>
+    <h2>Note / Demandes spéciales</h2>
+    <textarea id="note" placeholder="Ex : calibre spécifique, exigences qualité, accès limité..."></textarea>
+  </section>
+
+  <section class="step">
+    <div class="step-number">6</div>
+    <h2>Mode de paiement</h2>
+    <div id="payTiles">
+      <div class="pay-tile" data-pay="cb">
+        <div class="pay-emj">💳</div>
+        <div>
+          <div class="pay-name">Carte bancaire en ligne <span class="pay-tag">IMMÉDIAT</span></div>
+          <div class="pay-desc">Lien sécurisé envoyé sur WhatsApp après confirmation</div>
+        </div>
+      </div>
+      <div class="pay-tile" data-pay="sepa">
+        <div class="pay-emj">⚡</div>
+        <div>
+          <div class="pay-name">Virement SEPA Instant <span class="pay-tag">IMMÉDIAT</span></div>
+          <div class="pay-desc">RIB envoyé · Encaissement en quelques secondes</div>
+        </div>
+      </div>
+    </div>
+    <div class="info-box algerie" style="margin-top: 12px;">
+      💰 <strong>Paiement immédiat uniquement.</strong> La commande part en préparation dès réception.
+    </div>
+    <div class="info-box" style="margin-top: 8px;">
+      📄 <strong>Facture officielle</strong> avec N° TVA intra envoyée par email après paiement.
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="step-number">7</div>
+    <h2>Récapitulatif</h2>
+    <div class="selected-list" id="recapList"><div style="text-align:center; color:#999; padding:20px 0;">Aucune palette sélectionnée 👆</div></div>
+    <div class="totals" id="totals" style="display:none;">
+      <div class="row"><span>Sous-total HT</span><span id="totalHT">0,00 €</span></div>
+      <div class="row"><span>TVA 5,5 % (alimentaire)</span><span id="totalTVA">0,00 €</span></div>
+      <div class="row"><span>Livraison</span><span id="totalLiv">—</span></div>
+      <div class="row big"><span>TOTAL TTC</span><span id="totalTTC">0,00 €</span></div>
+    </div>
+  </section>
+
+  <!-- CALCULATEUR DE MARGE -->
+  <section class="calc-section">
+    <h2>🧮 Simulateur de marge revente</h2>
+    <p style="font-size: 12px; color: #666; margin: 0 0 12px;">Estimez votre rentabilité sur PDT Spunta Oued Souf · Palette 1 tonne · prix import <strong>0,92 €/kg</strong></p>
+    <div class="calc-input-row">
+      <label>Nombre de palettes</label>
+      <input type="number" id="calcPalettes" min="1" max="22" value="5">
+    </div>
+    <div class="calc-input-row">
+      <label>Votre prix de revente (€/kg)</label>
+      <input type="number" id="calcPrix" min="0.5" max="3" step="0.05" value="1.20">
+    </div>
+    <div style="background: white; border-radius: 12px; padding: 12px 14px; margin-top: 10px;">
+      <div class="calc-row"><span>📊 Volume</span><span id="calcVolume">5 000 kg</span></div>
+      <div class="calc-row"><span>📤 Coût d'achat HT</span><span id="calcCout">4 600 €</span></div>
+      <div class="calc-row"><span>📥 CA potentiel revente</span><span id="calcCA">6 000 €</span></div>
+      <div class="calc-row big"><span>💰 Marge brute</span><span id="calcMarge">1 400 € <span style="font-size:13px;">(23.3 %)</span></span></div>
+    </div>
+    <p style="font-size: 11px; color: #888; margin: 10px 0 0; line-height: 1.5;">⚠️ Estimation indicative · Marge brute avant frais logistiques de votre côté (stockage, déchargement, frais de redistribution).</p>
+  </section>
+
+  <!-- GALERIE ORIGINES -->
+  <section class="gallery-section">
+    <h2>📸 Origine certifiée · Nos régions partenaires</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item" style="background: linear-gradient(135deg, #ffcc80, #d2691e);">
+        <span class="gallery-emoji">🌾</span>
+        <div class="gallery-label">Oued Souf<br><span class="sub">El Oued · sol sablonneux</span></div>
+      </div>
+      <div class="gallery-item" style="background: linear-gradient(135deg, #aed581, #558b2f);">
+        <span class="gallery-emoji">🌿</span>
+        <div class="gallery-label">Vallée des Ziban<br><span class="sub">Biskra · serres modernes</span></div>
+      </div>
+      <div class="gallery-item" style="background: linear-gradient(135deg, #ffd54f, #c17900);">
+        <span class="gallery-emoji">🌴</span>
+        <div class="gallery-label">Tolga<br><span class="sub">Biskra · Deglet Nour IGP</span></div>
+      </div>
+      <div class="gallery-item" style="background: linear-gradient(135deg, #ff8a65, #c62828);">
+        <span class="gallery-emoji">🍊</span>
+        <div class="gallery-label">Boufarik<br><span class="sub">Mitidja · capitale citrus</span></div>
+      </div>
+      <div class="gallery-item" style="background: linear-gradient(135deg, #81c784, #1b5e20);">
+        <span class="gallery-emoji">⛰️</span>
+        <div class="gallery-label">Khenchela<br><span class="sub">Aurès · pommes d'altitude</span></div>
+      </div>
+      <div class="gallery-item" style="background: linear-gradient(135deg, #9575cd, #4527a0);">
+        <span class="gallery-emoji">🍇</span>
+        <div class="gallery-label">Mostaganem<br><span class="sub">Dahra · vignobles ancestraux</span></div>
+      </div>
+    </div>
+    <div style="text-align: center; font-size: 11px; color: #888; margin-top: 12px; line-height: 1.5;">📷 Photos réelles des producteurs partenaires à venir · Tous nos partenaires sont identifiés, audités et tracés</div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <h2>❓ Questions fréquentes</h2>
+    <div class="faq-item">
+      <div class="faq-question"><span>Pourquoi dois-je payer avant de recevoir ?</span><span class="arrow">▼</span></div>
+      <div class="faq-answer">Notre modèle direct producteur Algérie permet de proposer des tarifs 20 à 30 % en dessous du marché de gros français. Le paiement à la commande sécurise l'approvisionnement et finance la récolte, le transport et le dédouanement. En contrepartie, vous bénéficiez de prix imbattables et de la qualité certifiée origine.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span>Que faire si la qualité ne correspond pas ?</span><span class="arrow">▼</span></div>
+      <div class="faq-answer">Toute réclamation doit être formulée par écrit dans les <strong>48 heures ouvrées</strong> après livraison, accompagnée de photos et du bon de livraison signé portant les réserves. En cas de non-conformité avérée (calibre, fraîcheur, état sanitaire), nous prenons en charge le remplacement de la palette ou son remboursement intégral.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span>Comment fonctionne la précommande conteneur ?</span><span class="arrow">▼</span></div>
+      <div class="faq-answer">Pour les produits affichés en <strong>"Précommande conteneur"</strong>, vous réservez votre quantité en versant un acompte de 10 %. Dès que les 22 palettes nécessaires au remplissage du conteneur sont réservées (par vous et les autres acheteurs anonymes), le conteneur part d'Algérie et tous les clients sont notifiés. <strong>Délai maximum : 10 jours</strong> après la première précommande, sinon l'opération est annulée et les acomptes intégralement remboursés.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span>L'acompte est-il remboursable ?</span><span class="arrow">▼</span></div>
+      <div class="faq-answer">✅ <strong>Oui, à 100 %</strong> si le conteneur ne se remplit pas dans les 10 jours.<br>❌ <strong>Non</strong> si vous vous rétractez de votre propre initiative après avoir réservé (l'acompte sert d'indemnité pour avoir bloqué la palette à votre nom).</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span>Quels documents je reçois avec ma livraison ?</span><span class="arrow">▼</span></div>
+      <div class="faq-answer">À chaque livraison : <strong>facture officielle avec TVA</strong>, bon de livraison, <strong>certificat phytosanitaire</strong> (origine + traitement), Document Administratif Unique (DAU) douanier, numéro de lot pour traçabilité HACCP. Sur demande : certificat GLOBALG.A.P., analyses laboratoire, certificat bio (si applicable).</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span>La TVA est-elle récupérable ?</span><span class="arrow">▼</span></div>
+      <div class="faq-answer">Oui. La TVA à taux réduit (5,5 %) applicable sur les fruits et légumes non transformés est intégralement <strong>récupérable</strong> par les entreprises assujetties. Notre facture porte notre numéro de TVA intra ainsi que celui de l'acheteur pour faciliter la déduction comptable.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span>Quels modes de paiement acceptez-vous ?</span><span class="arrow">▼</span></div>
+      <div class="faq-answer">Deux options uniquement, toutes deux à <strong>paiement immédiat</strong> :<br>💳 <strong>Carte bancaire en ligne</strong> via lien sécurisé (envoyé par WhatsApp après confirmation)<br>⚡ <strong>Virement SEPA Instant</strong> (RIB envoyé · encaissement en quelques secondes)<br>❌ Pas de chèque, pas de délai de paiement, pas d'espèces au-delà de 1 000 €.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span>Que se passe-t-il en cas de blocage en douane ?</span><span class="arrow">▼</span></div>
+      <div class="faq-answer">Tous nos conteneurs partent avec un <strong>dossier douanier complet</strong> préparé en amont (DAU, certificats phytosanitaires, origines). Le risque de blocage est extrêmement réduit. En cas de retard imputable aux services douaniers, vous êtes prévenu sous 24 h et vous avez le choix : attendre (sans frais supplémentaires) ou annuler avec remboursement total.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span>Quelles certifications possédez-vous ?</span><span class="arrow">▼</span></div>
+      <div class="faq-answer">Nos produits respectent les normes <strong>HACCP</strong> obligatoires pour l'importation de F&amp;L. Les producteurs partenaires en Algérie sont sélectionnés selon des critères de qualité stricts (calibrage, traitements raisonnés, traçabilité). Sur demande, nous fournissons des certifications complémentaires : GLOBALG.A.P., bio (lorsque disponible), certificats d'origine spécifiques.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span>Comment être prévenu des nouveaux produits disponibles ?</span><span class="arrow">▼</span></div>
+      <div class="faq-answer">Sur tout produit affiché en "🚫 RUPTURE", cliquez sur le bouton <strong>"🔔 M'alerter &amp; manifester mon intérêt"</strong>. Vous indiquez la quantité visée et votre prix maximum acceptable, et nous vous prévenons dès que le produit est disponible. Plus vous êtes nombreux à manifester votre intérêt, plus vite nous ouvrons le conteneur correspondant.</div>
+    </div>
+  </section>
+
+  <!-- DISCLAIMER TRAÇABILITÉ -->
+  <div style="background: #f1f8e9; border: 1px solid #c8e6c9; border-radius: 12px; padding: 14px 16px; font-size: 12px; color: #1b5e20; margin-top: 18px; line-height: 1.6;">
+    📋 <strong>Traçabilité &amp; conformité</strong><br>
+    Chaque livraison est accompagnée des documents officiels suivants : <strong>facture avec TVA</strong> · <strong>bon de livraison</strong> · <strong>certificat phytosanitaire</strong> (origine, traitement, conformité) · <strong>Document Administratif Unique (DAU)</strong> douanier · <strong>numéro de lot</strong> pour traçabilité HACCP complète. Sur demande : certificats GLOBALG.A.P., bio (si applicable), analyses laboratoire.
+  </div>
+
+  <!-- FOOTER PROFESSIONNEL -->
+  <footer class="site-footer">
+    <div class="footer-trust">
+      <span class="trust-badge">🇩🇿 Origine certifiée Algérie</span>
+      <span class="trust-badge">📜 HACCP</span>
+      <span class="trust-badge">🌱 Traçabilité lot complète</span>
+      <span class="trust-badge">❄️ Camion frigo dédié</span>
+      <span class="trust-badge">📄 Phytosanitaire + DAU</span>
+      <span class="trust-badge">💳 Paiement sécurisé</span>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>🏢 Société</h4>
+        <p><strong>Numidia Fresh SARL</strong></p>
+        <p>SIRET : 000 000 000 00000</p>
+        <p>N° TVA intra : FR00 000000000</p>
+        <p>Capital : 5 000 €</p>
+        <p>RCS Marseille</p>
+      </div>
+      <div class="footer-col">
+        <h4>📍 Siège social</h4>
+        <p>[Adresse à compléter]</p>
+        <p>13000 Marseille</p>
+        <p>France 🇫🇷</p>
+        <p style="margin-top:10px; color:#888;">🚚 Camion frigo dédié</p>
+      </div>
+      <div class="footer-col">
+        <h4>📞 Contact</h4>
+        <p>📱 <a href="https://wa.me/33773514284">+33 7 73 51 42 84</a></p>
+        <p>📧 <a href="mailto:contact@numidiafresh.fr">contact@numidiafresh.fr</a></p>
+        <p style="margin-top:10px; color:#888;">Lun-Ven 8h-18h</p>
+      </div>
+      <div class="footer-col">
+        <h4>📋 Documents</h4>
+        <ul class="footer-link-list">
+          <li><button onclick="showLegalModal(&#39;cgv&#39;)">Conditions générales de vente</button></li>
+          <li><button onclick="showLegalModal(&#39;mentions&#39;)">Mentions légales</button></li>
+          <li><button onclick="showLegalModal(&#39;rgpd&#39;)">Politique RGPD</button></li>
+          <li><button onclick="showLegalModal(&#39;cookies&#39;)">Cookies</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 Numidia Fresh · Tous droits réservés</div>
+      <div><span class="flag-mention">🇩🇿 Direct producteur Algérie</span> · Vente B2B aux pros uniquement</div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- LEGAL MODAL -->
+<div class="modal-bg" id="legalModal">
+  <div class="modal">
+    <button class="modal-close" id="legalModalClose">✕</button>
+    <div class="legal-modal-content" id="legalModalContent"></div>
+  </div>
+</div>
+
+<div class="summary-bar">
+  <div class="summary-bar-inner">
+    <div class="summary-info">
+      <div class="summary-count" id="barCount">0 palette</div>
+      <div class="summary-total" id="barTotal">80,00 €</div>
+    </div>
+    <button class="validate-btn" id="validateBtn" disabled="">
+      <span style="font-size:18px;">📲</span> Valider sur WhatsApp
+    </button>
+  </div>
+</div>
+
+<button class="admin-fab" id="adminFab" title="Mode admin">🔧</button>
+<button class="dark-toggle" id="darkToggle" title="Mode nuit/jour">🌙</button>
+
+<!-- INFO MODAL -->
+<div class="modal-bg" id="infoModal">
+  <div class="modal">
+    <button class="modal-close" id="infoModalClose">✕</button>
+    <div id="infoModalContent"></div>
+  </div>
+</div>
+
+<!-- ADMIN MODAL -->
+<div class="modal-bg" id="adminModal">
+  <div class="modal admin-modal">
+    <button class="modal-close" id="adminModalClose">✕</button>
+    <h2 style="margin-top:0; color:#1b5e20;">🔧 Mode admin</h2>
+    <p style="font-size:13px; color:#666; margin-top:0;">Modifie les produits, gère les ruptures de stock. Tout est sauvegardé localement dans ton navigateur.</p>
+    <div class="admin-toolbar">
+      <input type="text" class="admin-search" id="adminSearch" placeholder="🔎 Filtrer...">
+      <button id="adminResetBtn" class="danger">↺ Réinitialiser</button>
+      <button id="adminExportBtn" class="primary">📋 Exporter</button>
+    </div>
+    <div class="admin-stats" id="adminStats">—</div>
+    <div id="adminList"></div>
+  </div>
+</div>
+
+<!-- INTEREST MODAL -->
+<div class="modal-bg" id="interestModal">
+  <div class="modal">
+    <button class="modal-close" id="interestModalClose">✕</button>
+    <h2 style="margin-top:0; color:#ef6c00; display:flex; align-items:center; gap:10px;">🔔 Manifestation d'intérêt</h2>
+    <div id="interestProductInfo" style="background:#fff8e1; border-radius:12px; padding:12px 14px; margin-bottom:12px; font-size:14px;"></div>
+    <p style="font-size:13px; color:#666; margin-top:0;">Indiquez la <strong>quantité visée</strong> et votre <strong>prix maximum acceptable</strong>. Nous vous prévenons dès que ce produit est de nouveau disponible et priorisons les commandes selon le volume.</p>
+    <label class="lbl">Quantité souhaitée (palettes) <span class="required">*</span></label>
+    <input type="number" id="interestQty" min="1" value="1">
+    <div id="interestQtyHint" class="hint" style="font-size:11px; color:#888; margin-top:2px;"></div>
+    <label class="lbl">Prix max acceptable (€/palette) <span class="required">*</span></label>
+    <input type="number" id="interestPrice" placeholder="—" step="10">
+    <div id="interestPriceHint" class="hint" style="font-size:11px; color:#888; margin-top:2px;"></div>
+    <label class="lbl">Message complémentaire (optionnel)</label>
+    <textarea id="interestNote" placeholder="Calibre souhaité, délai préféré, livraison..." style="min-height:60px;"></textarea>
+    <div class="info-box" style="margin:14px 0 8px;">
+      ⚠️ Vérifiez bien d'avoir rempli vos <strong>coordonnées</strong> (étape 2) avant d'envoyer — sinon nous ne pouvons pas vous recontacter.
+    </div>
+    <a id="interestWhatsApp" href="file:///Users/user/Library/Application%20Support/Claude/local-agent-mode-sessions/e58b9b7b-45fd-44c1-ab3b-a95b72c1a842/6beed1ad-5cb3-4fbe-90ab-545bf31449ef/local_f44e87cd-a6fd-4ba1-90b0-12273f05b4c7/outputs/numidia-fresh-final.html#" target="_blank" style="display:block; margin-top:14px; background:linear-gradient(135deg,#25d366,#128c7e); color:white; padding:14px; border-radius:14px; text-align:center; text-decoration:none; font-weight:700; font-size:16px;">📲 Envoyer la manifestation d'intérêt</a>
+  </div>
+</div>
+
+<!-- VALIDATION MODAL -->
+<div class="modal-bg" id="modal">
+  <div class="modal">
+    <button class="modal-close" id="modalClose">✕</button>
+    <h2 style="margin-top:0; color:#1b5e20;" id="modalOrderTitle">✅ Commande prête !</h2>
+    <div id="modalOrderNumber" style="background: linear-gradient(135deg, #e8f5e9, #fff8e1); border-left: 4px solid #2e7d32; padding: 10px 14px; border-radius: 10px; margin-bottom: 14px; font-size: 13px; color: #1b5e20;"></div>
+    <p>Envoyez-la sur WhatsApp — vous recevrez votre <strong>lien de paiement CB sécurisé</strong> sous quelques minutes.</p>
+    <div id="modalRecap" style="background:#f5f5f5; padding:14px; border-radius:12px; font-size:13px; white-space:pre-wrap; max-height:300px; overflow-y:auto; font-family:monospace;"></div>
+    <a id="waLink" href="file:///Users/user/Library/Application%20Support/Claude/local-agent-mode-sessions/e58b9b7b-45fd-44c1-ab3b-a95b72c1a842/6beed1ad-5cb3-4fbe-90ab-545bf31449ef/local_f44e87cd-a6fd-4ba1-90b0-12273f05b4c7/outputs/numidia-fresh-final.html#" target="_blank" style="display:block; margin-top:16px; background:linear-gradient(135deg,#25d366,#128c7e); color:white; padding:14px; border-radius:14px; text-align:center; text-decoration:none; font-weight:700; font-size:16px;">📲 Envoyer sur WhatsApp</a>
+    <a id="smsLink" href="file:///Users/user/Library/Application%20Support/Claude/local-agent-mode-sessions/e58b9b7b-45fd-44c1-ab3b-a95b72c1a842/6beed1ad-5cb3-4fbe-90ab-545bf31449ef/local_f44e87cd-a6fd-4ba1-90b0-12273f05b4c7/outputs/numidia-fresh-final.html#" style="display:block; margin-top:8px; text-align:center; color:#666; font-size:13px;">Pas de WhatsApp ? Envoyer par SMS</a>
+  </div>
+</div>
+
+<script>
+// Note : l'interface utilise le vouvoiement pour le client (B2B pro).
+// ============ CATALOGUE 🇩🇿 — 43 produits ============
+// ⚠️ PRIX INDICATIFS — à remplacer par les vrais tarifs fournisseur
+const DEFAULT_CATALOG = [
+  // ─── Dattes & spécialités ───
+  { id:'dat-deglet', emoji:'🌴', name:'Dattes Deglet Nour', cat:'dattes', inStock:false,
+    origin:'Tolga (Biskra) · Référence mondiale', quality:'Cat. Extra',
+    paletteDesc:'100 cartons de 5 kg', paletteWeight:500, palettePrice:1800,
+    details:{ packaging:'Cartons 5 kg avec film alimentaire, étuis individuels possibles · 100 cartons/palette EUR', calibre:'Calibre 70-80 dattes/kg · Branches entières disponibles sur demande', conservation:'4-7°C ou ambiant sec · DLUO 12 mois · À l\'abri de la lumière', saison:'Récolte octobre-décembre · Disponible toute l\'année', variete:'Deglet Nour ("Doigt de lumière") · Translucide, miellée, peau fine', certifications:'IGP "Deglet Nour de Tolga" · HACCP · Bio possible', transport:'Sec ou frigo · Pas de chaîne du froid stricte requise' } },
+  { id:'dat-ghars', emoji:'🌴', name:'Dattes Ghars (molles)', cat:'dattes', inStock:false,
+    origin:'Oued Souf · El Oued', quality:'Premium',
+    paletteDesc:'200 cartons de 2,5 kg', paletteWeight:500, palettePrice:1400,
+    details:{ packaging:'Cartons 2,5 kg · Compactées · 200 cartons/palette', calibre:'Variété molle, très sucrée · Tendre', conservation:'4-7°C · DLUO 8-10 mois', saison:'Récolte octobre · Stock annuel', variete:'Ghars · Très utilisée pour pâtes de dattes et makrout', certifications:'HACCP', transport:'Frigo conseillé en été' } },
+  { id:'dat-mech', emoji:'🌴', name:'Dattes Mech-Degla (sèches)', cat:'dattes', inStock:false,
+    origin:'Biskra · Sidi Okba', quality:'Cat. 1',
+    paletteDesc:'150 cartons de 4 kg', paletteWeight:600, palettePrice:1200,
+    details:{ packaging:'Cartons 4 kg · 150 cartons/palette', calibre:'Datte sèche, ferme · Calibre régulier', conservation:'Ambiant sec · DLUO 18 mois', saison:'Octobre-novembre · Stock annuel', variete:'Mech-Degla · "Démarche du sage", peu sucrée, idéale snacking', certifications:'HACCP', transport:'Sec' } },
+  { id:'fig-frais', emoji:'🫐', name:'Figues fraîches', cat:'dattes', inStock:false,
+    origin:'Béni Maouche (Béjaïa) · IGP', quality:'Cat. Extra',
+    paletteDesc:'80 cageots de 3 kg', paletteWeight:240, palettePrice:720,
+    details:{ packaging:'Cageots bois 3 kg · Couche unique sur papier · 80 cageots/palette', calibre:'40-60 mm · Bien fermes', conservation:'2-4°C · 7 jours max · Fragile', saison:'Août-septembre uniquement · Saisonnier', variete:'Taamriwth (noire) · Azendjar (verte)', certifications:'IGP "Figue Sèche de Béni Maouche" · HACCP', transport:'FRIGO OBLIGATOIRE · Manipulation délicate' } },
+  { id:'oli-vert', emoji:'🫒', name:'Olives vertes en saumure', cat:'dattes', inStock:false,
+    origin:'Sour El Ghozlane (Bouira)', quality:'Premium',
+    paletteDesc:'100 seaux de 5 kg', paletteWeight:500, palettePrice:1700,
+    details:{ packaging:'Seaux plastique alimentaire 5 kg avec couvercle hermétique · Saumure d\'origine · 100 seaux/palette', calibre:'Calibre 200-240 olives/kg · Dénoyautées sur demande', conservation:'Ambiant · 18 mois fermé · 1 mois après ouverture au frais', saison:'Récolte septembre-octobre · Stock annuel', variete:'Sigoise (variété autochtone) · Chair ferme, peu d\'amertume', certifications:'HACCP · Bio possible', transport:'Sec, à l\'abri du gel' } },
+  { id:'oli-noir', emoji:'🫒', name:'Olives noires Kabyles', cat:'dattes', inStock:false,
+    origin:'Tizi Ouzou · Kabylie', quality:'Premium',
+    paletteDesc:'100 seaux de 5 kg', paletteWeight:500, palettePrice:1500,
+    details:{ packaging:'Seaux 5 kg · Saumure naturelle · 100 seaux/palette', calibre:'150-180 olives/kg · Variété fine de table', conservation:'Ambiant · 18 mois · Frais après ouverture', saison:'Récolte novembre-janvier · Stock annuel', variete:'Chemlal kabyle · Petite, savoureuse, double usage table/huile', certifications:'HACCP', transport:'Sec' } },
+  { id:'grenades', emoji:'🍎', name:'Grenades', cat:'dattes', inStock:false,
+    origin:'Tessala (Sidi Bel Abbès)', quality:'Cat. Extra',
+    paletteDesc:'100 cageots de 8 kg', paletteWeight:800, palettePrice:1750,
+    details:{ packaging:'Cageots carton 8 kg · 100 cageots/palette', calibre:'400-500 g/pièce · Calibre uniforme', conservation:'5-7°C · 8 semaines · Sec', saison:'Septembre-décembre · Stock frigo février', variete:'Tessala (douce, grains rouges foncés) · Wonderful possible', certifications:'HACCP', transport:'Frigo léger' } },
+  { id:'miel-jujub', emoji:'🍯', name:'Miel de jujubier "Sidr"', cat:'dattes', inStock:false,
+    origin:'Adrar · Sahara algérien', quality:'Premium rare',
+    paletteDesc:'200 pots de 1 kg', paletteWeight:200, palettePrice:3200,
+    details:{ packaging:'Pots verre 1 kg avec capsule métal · Étiquette traçabilité · 200 pots/palette', calibre:'Pots 500 g et 250 g possibles sur demande', conservation:'Ambiant · 24 mois · À l\'abri du soleil', saison:'Récolte octobre-novembre · Stock limité', variete:'Sidr (jujubier sauvage du Sahara) · Cristallisation lente, arômes intenses', certifications:'HACCP · Origine certifiée Adrar · Bio possible', transport:'Sec' } },
+  { id:'huile-olive', emoji:'🫒', name:'Huile d\'olive Extra Vierge', cat:'dattes', inStock:false,
+    origin:'Kabylie · Béjaïa', quality:'Extra Vierge · 1ère pression à froid',
+    paletteDesc:'60 bidons de 5 L', paletteWeight:300, palettePrice:2400,
+    details:{ packaging:'Bidons inox/PET alimentaire 5 L · 60 bidons/palette · Bouteilles verre 1 L possibles', calibre:'Acidité < 0,5 % · K232/K270 conformes Cat. Extra Vierge', conservation:'Ambiant <22°C · 18 mois · À l\'abri lumière', saison:'Pression novembre-décembre · Stock annuel', variete:'Chemlal et Azzeradj de Kabylie · Fruité moyen, herbacé', certifications:'HACCP · Analyses chimiques chaque lot · Bio disponible', transport:'Sec, ne pas exposer au gel' } },
+
+  // ─── Légumes ───
+  { id:'pdt', emoji:'🥔', name:'Pommes de terre Spunta', cat:'legume', inStock:false, precommande:true,
+    containerTarget:22, containerReserved:0, containerDaysLeft:10,
+    origin:'Oued Souf 🌾 (El Oued) · Ghoutt', quality:'Cat. 1 · Sol sablonneux',
+    paletteDesc:'40 sacs de 25 kg', paletteWeight:1000, palettePrice:920,
+    details:{ packaging:'Sacs polypropylène tissé 25 kg · Étiquette traçabilité · 40 sacs/palette filmée', calibre:'50-70 mm uniforme · Lavées · Triage manuel', conservation:'4-8°C · Humidité 85-90 % · 6 mois en conservation', saison:'2 récoltes/an dans le Souf : avril-juin et octobre-décembre', variete:'Spunta (chair jaune ferme, peau fine) · Idéale frites, purée, à l\'eau', certifications:'HACCP · GLOBALG.A.P. possible · Phytosanitaire fourni', transport:'Sec ou frigo léger · À l\'abri lumière' } },
+  { id:'tom', emoji:'🍅', name:'Tomates rondes sous serre', cat:'legume', inStock:false,
+    origin:'Biskra · Vallée des Ziban', quality:'Cat. Extra',
+    paletteDesc:'120 plateaux de 6 kg', paletteWeight:720, palettePrice:1100,
+    details:{ packaging:'Plateaux bois ou plastique 6 kg · Couche unique · 120 plateaux/palette', calibre:'67-82 mm · Rouge mûr · Pédoncule vert frais', conservation:'10-13°C · Humidité 90 % · 14 jours', saison:'Novembre à juin (sous serre)', variete:'Heinz 1370, Roma, Beef · Goût concentré', certifications:'HACCP · GLOBALG.A.P. · Phytosanitaire', transport:'FRIGO 10-13°C · Ne JAMAIS descendre < 8°C' } },
+  { id:'oig', emoji:'🧅', name:'Oignons jaunes', cat:'legume', inStock:false,
+    origin:'El Khroub (Constantine)', quality:'Cat. 1',
+    paletteDesc:'40 sacs de 25 kg', paletteWeight:1000, palettePrice:780,
+    details:{ packaging:'Sacs filet polypropylène 25 kg · 40 sacs/palette', calibre:'50-80 mm · Bulbes fermes, sans germes', conservation:'0-2°C ou ambiant sec · 6-8 mois', saison:'Récolte juin-août · Stock annuel', variete:'Yellow Sweet · Long jour', certifications:'HACCP · Phytosanitaire', transport:'Sec ou frigo · Aéré' } },
+  { id:'car', emoji:'🥕', name:'Carottes', cat:'legume', inStock:false,
+    origin:'Khemis Miliana (Aïn Defla)', quality:'Cat. 1',
+    paletteDesc:'100 sacs de 10 kg', paletteWeight:1000, palettePrice:740,
+    details:{ packaging:'Sacs polyéthylène 10 kg perforés · 100 sacs/palette', calibre:'150-250 g/pièce · 20-40 mm diamètre · Lavées', conservation:'0-2°C · Humidité 95 % · 4 mois', saison:'Octobre à mai · Disponible quasi-année', variete:'Nantes Improved · Chair tendre, sucrée', certifications:'HACCP · GLOBALG.A.P.', transport:'FRIGO 0-4°C' } },
+  { id:'cou', emoji:'🥒', name:'Courgettes', cat:'legume', inStock:false,
+    origin:'Mitidja (Blida)', quality:'Cat. 1',
+    paletteDesc:'80 cageots de 5 kg', paletteWeight:400, palettePrice:540,
+    details:{ packaging:'Cageots bois 5 kg · 80 cageots/palette', calibre:'14-21 cm · Diamètre 25-40 mm · Vertes brillantes', conservation:'7-10°C · Humidité 90 % · 10 jours', saison:'Mars à novembre · Sous serre en hiver', variete:'Diamant F1 · Vert moyen', certifications:'HACCP', transport:'FRIGO 7-10°C · Sensible au choc thermique' } },
+  { id:'aub', emoji:'🍆', name:'Aubergines', cat:'legume', inStock:false,
+    origin:'Biskra · Vallée des Ziban', quality:'Cat. 1',
+    paletteDesc:'80 cageots de 5 kg', paletteWeight:400, palettePrice:680,
+    details:{ packaging:'Cageots bois 5 kg · Couche unique · 80 cageots/palette', calibre:'200-350 g · Calibre uniforme · Violet brillant', conservation:'10-12°C · 14 jours · Très sensible au froid', saison:'Mars à novembre (sous serre toute l\'année à Biskra)', variete:'Black Bell · Allongée violet foncé', certifications:'HACCP', transport:'NE JAMAIS < 10°C (sinon piqûres marron)' } },
+  { id:'poi', emoji:'🫑', name:'Poivrons mix 3 couleurs', cat:'legume', inStock:false,
+    origin:'Biskra · Vallée des Ziban', quality:'Cat. Extra',
+    paletteDesc:'80 cageots de 5 kg', paletteWeight:400, palettePrice:760,
+    details:{ packaging:'Cageots bois 5 kg · Mix rouge/jaune/vert · 80 cageots/palette', calibre:'70-90 mm · Calibre uniforme · Charnus', conservation:'7-10°C · 14 jours · Humidité 90 %', saison:'Mars à novembre · Sous serre à Biskra toute année', variete:'Doux blocky · Souvent Lamuyo F1', certifications:'HACCP · GLOBALG.A.P.', transport:'FRIGO 7-10°C' } },
+  { id:'con', emoji:'🥒', name:'Concombres sous serre', cat:'legume', inStock:false,
+    origin:'Biskra · Vallée des Ziban', quality:'Cat. 1',
+    paletteDesc:'100 cageots de 5 kg', paletteWeight:500, palettePrice:580,
+    details:{ packaging:'Cageots 5 kg · Filmage individuel possible · 100 cageots/palette', calibre:'350-500 g · 30-35 cm · Droits', conservation:'10-12°C · 10 jours · Humidité 95 %', saison:'Octobre à juin sous serre', variete:'Beit Alpha (mini concombre libanais) ou long hollandais', certifications:'HACCP', transport:'FRIGO 10-12°C · Pas sous 8°C' } },
+  { id:'sal', emoji:'🥬', name:'Salades laitues', cat:'legume', inStock:false,
+    origin:'Mitidja (Blida)', quality:'Cat. 1',
+    paletteDesc:'40 colis de 12 pièces', paletteWeight:480, palettePrice:420,
+    details:{ packaging:'Colis carton 12 pièces · 40 colis/palette · Racines protégées', calibre:'300-400 g/pièce · Pomme bien formée', conservation:'0-4°C · 10 jours · Humidité 95 %', saison:'Toute l\'année · Pleine saison automne-printemps', variete:'Batavia, laitue romaine, beurre', certifications:'HACCP · GLOBALG.A.P.', transport:'FRIGO 0-4°C OBLIGATOIRE' } },
+  { id:'chou-fleur', emoji:'🥦', name:'Choux-fleurs', cat:'legume', inStock:false,
+    origin:'Mitidja (Blida)', quality:'Cat. 1',
+    paletteDesc:'40 plateaux de 12 kg', paletteWeight:480, palettePrice:580,
+    details:{ packaging:'Plateaux 12 kg · 6-8 pièces/plateau · 40 plateaux/palette', calibre:'1,2-1,8 kg/pièce · Pommes blanches, fermes', conservation:'0-4°C · 14 jours · Humidité 90 %', saison:'Novembre à avril', variete:'Snowball · Aviso', certifications:'HACCP', transport:'FRIGO 0-4°C' } },
+  { id:'artichaut', emoji:'🌿', name:'Artichauts', cat:'legume', inStock:false,
+    origin:'Tlemcen', quality:'Cat. Extra',
+    paletteDesc:'40 cageots de 6 kg', paletteWeight:240, palettePrice:720,
+    details:{ packaging:'Cageots 6 kg · 20-30 pièces/cageot · 40 cageots/palette', calibre:'250-400 g · Bractées serrées', conservation:'1-2°C · 21 jours · Humidité 95 %', saison:'Mars à juin (printemps)', variete:'Violet de Provence type · Camus possible', certifications:'HACCP', transport:'FRIGO 1-4°C' } },
+  { id:'feves', emoji:'🌱', name:'Fèves fraîches', cat:'legume', inStock:false,
+    origin:'Mitidja (Blida)', quality:'Cat. 1',
+    paletteDesc:'80 cageots de 5 kg', paletteWeight:400, palettePrice:580,
+    details:{ packaging:'Cageots ou caisses 5 kg · Cosses entières · 80 cageots/palette', calibre:'Cosses 15-20 cm · Grains tendres', conservation:'2-4°C · 7 jours · Humidité 95 %', saison:'Février à mai (saisonnier strict)', variete:'Fève d\'Aguadulce · Très productive', certifications:'HACCP', transport:'FRIGO · Cosses fragiles' } },
+  { id:'pois', emoji:'🌱', name:'Petits pois', cat:'legume', inStock:false,
+    origin:'Mitidja (Blida)', quality:'Cat. 1',
+    paletteDesc:'60 cageots de 6 kg', paletteWeight:360, palettePrice:720,
+    details:{ packaging:'Cageots 6 kg · Cosses entières · 60 cageots/palette', calibre:'Cosses fermes 7-9 cm', conservation:'0-2°C · 7-10 jours', saison:'Février à mai (saisonnier)', variete:'Merveille de Kelvedon', certifications:'HACCP', transport:'FRIGO 0-2°C OBLIGATOIRE' } },
+  { id:'haricots', emoji:'🫛', name:'Haricots verts fins', cat:'legume', inStock:false,
+    origin:'Biskra · Vallée des Ziban', quality:'Extra-fins',
+    paletteDesc:'100 cageots de 4 kg', paletteWeight:400, palettePrice:1000,
+    details:{ packaging:'Cageots 4 kg · Couche fine · 100 cageots/palette', calibre:'Calibre fin 6-8 mm · Tendres, sans fils', conservation:'4-7°C · 7 jours · Humidité 95 %', saison:'Mars à juin (Biskra : décembre à mai sous serre)', variete:'Helda · Filet · Extra-fin', certifications:'HACCP · GLOBALG.A.P.', transport:'FRIGO 4-7°C' } },
+  { id:'gombo', emoji:'🌶️', name:'Gombos (Bamya)', cat:'legume', inStock:false,
+    origin:'Biskra · Sud algérien', quality:'Cat. Extra',
+    paletteDesc:'90 cageots de 4 kg', paletteWeight:360, palettePrice:1620,
+    details:{ packaging:'Cageots 4 kg · Couche unique · 90 cageots/palette', calibre:'Petits gombos 4-6 cm (tendres) · Trier longs/courts sur demande', conservation:'7-10°C · 7 jours · Humidité 90 %', saison:'Juin à octobre · Production sud toute année', variete:'Clemson Spineless · Vert vif', certifications:'HACCP', transport:'FRIGO 7-10°C · Sensible au froid' } },
+  { id:'piment', emoji:'🌶️', name:'Piments forts verts', cat:'legume', inStock:false,
+    origin:'Biskra · Vallée des Ziban', quality:'Cat. 1',
+    paletteDesc:'80 cageots de 5 kg', paletteWeight:400, palettePrice:720,
+    details:{ packaging:'Cageots 5 kg · 80 cageots/palette', calibre:'8-12 cm · Forme allongée · Vert moyen à mûr', conservation:'7-10°C · 14 jours · Humidité 90 %', saison:'Disponible toute l\'année (serre Biskra)', variete:'Piment vert demi-fort algérien (felfla)', certifications:'HACCP', transport:'FRIGO 7-10°C' } },
+  { id:'cardon', emoji:'🌿', name:'Cardons', cat:'legume', inStock:false,
+    origin:'Mitidja (Blida)', quality:'Cat. 1',
+    paletteDesc:'40 bottes de 10 kg', paletteWeight:400, palettePrice:480,
+    details:{ packaging:'Bottes ficelées 10 kg · Côtes blanches · 40 bottes/palette', calibre:'Côtes 40-60 cm · Blanches, charnues', conservation:'2-4°C · 21 jours · Humidité 95 %', saison:'Octobre à mars (hiver)', variete:'Cardon plein blanc · Spécialité algérienne (Ramadan)', certifications:'HACCP', transport:'FRIGO 2-4°C' } },
+
+  // ─── Fruits ───
+  { id:'past', emoji:'🍉', name:'Pastèques', cat:'fruit', inStock:false, precommande:true,
+    containerTarget:22, containerReserved:0, containerDaysLeft:10,
+    origin:'Oued Souf (El Oued)', quality:'Sucrée · Brix > 10',
+    paletteDesc:'~60 pastèques en bin', paletteWeight:600, palettePrice:580,
+    details:{ packaging:'Bin palette grande 1 m³ · ~60 fruits · Vrac coussiné paille', calibre:'8-12 kg/pièce · Couleur sombre, queue sèche (mûre)', conservation:'10-15°C · 14 jours · Humidité 85-90 %', saison:'Mai à septembre · Saisonnier strict', variete:'Crimson Sweet · Sugar Baby possible', certifications:'HACCP · Phytosanitaire', transport:'Sec ou frigo léger · Manipulation soignée' } },
+  { id:'mel-galia', emoji:'🍈', name:'Melons Galia', cat:'fruit', inStock:false,
+    origin:'Oued Souf (El Oued)', quality:'Calibre 1,5-2 kg · Brix > 12',
+    paletteDesc:'80 colis de 6 pièces', paletteWeight:600, palettePrice:1000,
+    details:{ packaging:'Colis carton 6 pièces · 80 colis/palette · Alvéoles individuelles', calibre:'1,5-2 kg/pièce · Maille marquée', conservation:'7-10°C · 14 jours · Sucre stable', saison:'Mai à août', variete:'Galia · Chair vert clair, parfumée', certifications:'HACCP', transport:'FRIGO 7-10°C · Très parfumé (séparer)' } },
+  { id:'ora', emoji:'🍊', name:'Oranges Washington Navel', cat:'fruit', inStock:false,
+    origin:'Boufarik · Plaine de la Mitidja', quality:'Cat. Extra',
+    paletteDesc:'66 filets de 15 kg', paletteWeight:990, palettePrice:950,
+    details:{ packaging:'Filets 15 kg ou cartons 10 kg · 66 filets/palette', calibre:'Calibre 6-7 (70-90 mm) · Robe orange vif', conservation:'5-7°C · 6 semaines · Humidité 90 %', saison:'Décembre à mai', variete:'Washington Navel · Sans pépins · Idéale table', certifications:'HACCP · GLOBALG.A.P. · Phytosanitaire', transport:'Sec ou frigo léger 5-7°C' } },
+  { id:'clem', emoji:'🍊', name:'Clémentines', cat:'fruit', inStock:false,
+    origin:'Boufarik · Mitidja', quality:'Cat. Extra',
+    paletteDesc:'80 plateaux de 10 kg', paletteWeight:800, palettePrice:1100,
+    details:{ packaging:'Plateaux carton 10 kg · 80 plateaux/palette', calibre:'Calibre 1-2 (54-69 mm)', conservation:'4-6°C · 4 semaines', saison:'Novembre à février', variete:'Clémentine Méditerranée · Peu pépins', certifications:'HACCP · GLOBALG.A.P.', transport:'FRIGO 4-6°C' } },
+  { id:'mand', emoji:'🍊', name:'Mandarines', cat:'fruit', inStock:false,
+    origin:'Boufarik · Mitidja', quality:'Cat. 1',
+    paletteDesc:'66 filets de 15 kg', paletteWeight:990, palettePrice:850,
+    details:{ packaging:'Filets ou cartons 15 kg · 66 unités/palette', calibre:'60-75 mm', conservation:'5-7°C · 4 semaines', saison:'Décembre à mars', variete:'Mandarine commune · Avec pépins (parfum intense)', certifications:'HACCP', transport:'FRIGO 5-7°C' } },
+  { id:'cit', emoji:'🍋', name:'Citrons jaunes Eureka', cat:'fruit', inStock:false,
+    origin:'Skikda · Vallée du Saf-Saf', quality:'Cat. 1',
+    paletteDesc:'80 cageots de 10 kg', paletteWeight:800, palettePrice:1150,
+    details:{ packaging:'Cageots bois 10 kg · 80 cageots/palette', calibre:'58-72 mm · Peau ferme, lisse', conservation:'8-10°C · 10 semaines', saison:'Octobre à mai (Eureka : presque toute l\'année)', variete:'Eureka · Jus abondant, peu de pépins', certifications:'HACCP · GLOBALG.A.P.', transport:'FRIGO 8-10°C' } },
+  { id:'pom-gold', emoji:'🍎', name:'Pommes Golden Delicious', cat:'fruit', inStock:false,
+    origin:'Khenchela · Massif des Aurès', quality:'Cat. 1 · Pommes d\'altitude',
+    paletteDesc:'80 plateaux de 10 kg', paletteWeight:800, palettePrice:880,
+    details:{ packaging:'Plateaux alvéolés 10 kg · 80 plateaux/palette · Couche unique', calibre:'70-85 mm · Robe jaune dorée, légèrement rosée', conservation:'1-3°C · 6 mois en atmosphère contrôlée', saison:'Récolte septembre · Stock toute l\'année', variete:'Golden Delicious · Chair sucrée, croquante', certifications:'HACCP · GLOBALG.A.P.', transport:'FRIGO 1-3°C' } },
+  { id:'pec', emoji:'🍑', name:'Pêches & Nectarines', cat:'fruit', inStock:false,
+    origin:'Mascara · Plateau de Sig', quality:'Cat. Extra',
+    paletteDesc:'60 plateaux de 6 kg', paletteWeight:360, palettePrice:720,
+    details:{ packaging:'Plateaux alvéolés 6 kg · Couche unique · 60 plateaux/palette', calibre:'67-82 mm · Calibre uniforme · Mûres mais fermes', conservation:'0-2°C · 14 jours · Très fragile', saison:'Juin à septembre · Saisonnier strict', variete:'Pêche jaune type Cardinal · Nectarine Big Top', certifications:'HACCP', transport:'FRIGO 0-2°C · Manipulation très délicate' } },
+  { id:'abricot', emoji:'🍑', name:'Abricots', cat:'fruit', inStock:false,
+    origin:'M\'sila · Hauts plateaux', quality:'Cat. Extra',
+    paletteDesc:'60 plateaux de 6 kg', paletteWeight:360, palettePrice:950,
+    details:{ packaging:'Plateaux alvéolés 6 kg · 60 plateaux/palette', calibre:'40-50 mm · Calibre A · Doré orangé', conservation:'0-2°C · 10 jours max', saison:'Mai à juillet (saisonnier strict)', variete:'Bulida (variété algérienne) · Rouge du Roussillon', certifications:'HACCP', transport:'FRIGO 0-2°C · Délicat' } },
+  { id:'cerise', emoji:'🍒', name:'Cerises Bigarreau', cat:'fruit', inStock:false,
+    origin:'Souk Ahras · Constantinois', quality:'Cat. Extra',
+    paletteDesc:'80 cageots de 5 kg', paletteWeight:400, palettePrice:2800,
+    details:{ packaging:'Cageots bois 5 kg avec couvercle · 80 cageots/palette', calibre:'24-28 mm · Calibre AA · Rouge sombre', conservation:'0-2°C · 14 jours · Humidité 90 %', saison:'Mai à juillet (saisonnier court)', variete:'Bigarreau Burlat · Napoléon', certifications:'HACCP · GLOBALG.A.P.', transport:'FRIGO 0-2°C OBLIGATOIRE' } },
+  { id:'rai', emoji:'🍇', name:'Raisin Muscat', cat:'fruit', inStock:false,
+    origin:'Mostaganem · Dahra', quality:'Cat. 1',
+    paletteDesc:'64 plateaux de 5 kg', paletteWeight:320, palettePrice:850,
+    details:{ packaging:'Plateaux bois alvéolés 5 kg · 64 plateaux/palette', calibre:'Grappes 400-700 g · Grains 18-22 mm', conservation:'-0,5 à 0°C · 4 mois (atmosphère contrôlée)', saison:'Août à octobre', variete:'Muscat d\'Alexandrie · Très aromatique · Servant aussi pour raisin de table', certifications:'HACCP', transport:'FRIGO 0-2°C · SO2 anti-Botrytis' } },
+  { id:'fra', emoji:'🍓', name:'Fraises', cat:'fruit', inStock:false,
+    origin:'Skikda · Collo', quality:'Cat. Extra',
+    paletteDesc:'240 barquettes de 1 kg', paletteWeight:240, palettePrice:780,
+    details:{ packaging:'Barquettes PET 1 kg avec couvercle · 240 barquettes/palette', calibre:'Calibre 25-35 mm · Rouge vif uniforme', conservation:'1-2°C · 5-7 jours max · Humidité 90 %', saison:'Mars à juin', variete:'Camarosa · Festival · Chair ferme, parfumée', certifications:'HACCP · GLOBALG.A.P.', transport:'FRIGO 1-2°C OBLIGATOIRE · Ultra-fragile' } },
+  { id:'figbarb', emoji:'🌵', name:'Figues de Barbarie', cat:'fruit', inStock:false,
+    origin:'Tébessa · Hauts plateaux', quality:'Cat. 1',
+    paletteDesc:'~600 pièces en bin', paletteWeight:400, palettePrice:720,
+    details:{ packaging:'Bin grande palette · Vrac coussiné · Manipulation avec gants épines', calibre:'120-180 g/pièce · Couleur jaune-orange à rouge', conservation:'5-8°C · 21 jours · Humidité 85 %', saison:'Août à octobre', variete:'Opuntia ficus-indica jaune et rouge', certifications:'HACCP', transport:'Sec ou frigo léger · Gants obligatoires en manutention' } },
+
+  // ─── Aromates ───
+  { id:'ail', emoji:'🧄', name:'Ail blanc', cat:'aromate', inStock:false,
+    origin:'Béni Mered (Blida)', quality:'Cat. Extra',
+    paletteDesc:'120 cageots de 5 kg', paletteWeight:600, palettePrice:2400,
+    details:{ packaging:'Cageots 5 kg · 120 cageots/palette · Tresses traditionnelles disponibles', calibre:'Têtes 55-65 mm · Bulbes pleins, blancs', conservation:'0°C ou 18-20°C sec · 8-10 mois', saison:'Récolte mai-juin · Stock annuel', variete:'Blanc de la Mitidja · Variété autochtone', certifications:'HACCP · Phytosanitaire', transport:'Sec, aéré' } },
+  { id:'per', emoji:'🌿', name:'Persil frais plat', cat:'aromate', inStock:false,
+    origin:'Mitidja (Blida)', quality:'Cat. 1',
+    paletteDesc:'400 bottes (pesées ~400 kg)', paletteWeight:400, palettePrice:160,
+    details:{ packaging:'Bottes ficelées ~80-100 g · Caisses 50 bottes · 400 bottes/palette', calibre:'Bottes uniformes · Vert intense · Pas jauni', conservation:'1-4°C · 7 jours · Humidité 95 %', saison:'Toute l\'année (Mitidja produit en continu)', variete:'Persil plat (à grosse feuille) · Persil frisé sur demande', certifications:'HACCP', transport:'FRIGO 1-4°C · Aéré' } },
+  { id:'cor', emoji:'🌱', name:'Coriandre fraîche', cat:'aromate', inStock:false,
+    origin:'Mitidja (Blida)', quality:'Cat. 1',
+    paletteDesc:'400 bottes (pesées ~400 kg)', paletteWeight:400, palettePrice:160,
+    details:{ packaging:'Bottes ficelées ~80-100 g · 400 bottes/palette', calibre:'Bottes uniformes · Vert intense', conservation:'1-4°C · 5-7 jours · Humidité 95 %', saison:'Toute l\'année', variete:'Coriandre commune · Très aromatique', certifications:'HACCP', transport:'FRIGO 1-4°C' } },
+  { id:'menthe', emoji:'🌿', name:'Menthe fraîche', cat:'aromate', inStock:false,
+    origin:'Blida · Mitidja', quality:'Cat. Extra',
+    paletteDesc:'400 bottes (pesées ~300 kg)', paletteWeight:300, palettePrice:200,
+    details:{ packaging:'Bottes ficelées ~75 g · 400 bottes/palette', calibre:'Bottes uniformes · Vert intense, parfum puissant', conservation:'1-4°C · 5-7 jours · Humidité 95 %', saison:'Toute l\'année (pleine production : pic Ramadan)', variete:'Menthe Naânaâ (verte douce) · Indispensable au thé', certifications:'HACCP', transport:'FRIGO 1-4°C · Très aromatique (isoler)' } }
+];
+
+// ============ LOCAL STORAGE & ADMIN ============
+const LS_KEY = 'numidia_overrides_v1';
+
+function loadOverrides() {
+  try { return JSON.parse(localStorage.getItem(LS_KEY) || '{}'); }
+  catch (e) { return {}; }
+}
+
+function saveOverrides(o) {
+  try { localStorage.setItem(LS_KEY, JSON.stringify(o)); }
+  catch (e) { console.warn('LocalStorage fail:', e); }
+}
+
+let overrides = loadOverrides();
+
+function buildCatalog() {
+  return DEFAULT_CATALOG.map(p => {
+    const ov = overrides[p.id] || {};
+    return { ...p, ...ov };
+  });
+}
+
+let CATALOG = buildCatalog();
+
+function setOverride(id, changes) {
+  overrides[id] = { ...(overrides[id] || {}), ...changes };
+  saveOverrides(overrides);
+  CATALOG = buildCatalog();
+}
+
+function resetAllOverrides() {
+  overrides = {};
+  saveOverrides(overrides);
+  CATALOG = buildCatalog();
+}
+
+// ============ STATE & SESSION SAVE ============
+const state = { est:'', pay:'', cat:'all', search:'', dateChoice:'', selected:{}, rupturesExpanded:false };
+
+const SESSION_KEY = 'numidia_session_v1';
+const SESSION_EXPIRY_DAYS = 15;
+const SESSION_FIELDS = ['bizName','contactName','siret','phone','email','addr','cp','ville','compl','creneau','note'];
+
+function saveSession() {
+  try {
+    const fields = {};
+    SESSION_FIELDS.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) fields[id] = el.value;
+    });
+    const data = { saved: Date.now(), selected: state.selected, est: state.est, pay: state.pay, dateChoice: state.dateChoice, fields };
+    localStorage.setItem(SESSION_KEY, JSON.stringify(data));
+  } catch (e) { /* localStorage indisponible */ }
+}
+
+function loadSession() {
+  try {
+    const raw = localStorage.getItem(SESSION_KEY);
+    if (!raw) return;
+    const data = JSON.parse(raw);
+    if (!data.saved || (Date.now() - data.saved) > SESSION_EXPIRY_DAYS * 86400000) {
+      localStorage.removeItem(SESSION_KEY); return;
+    }
+    if (data.selected) {
+      for (const id in data.selected) {
+        if (CATALOG.find(p => p.id === id)) state.selected[id] = data.selected[id];
+      }
+    }
+    state.est = data.est || '';
+    state.pay = data.pay || '';
+    state.dateChoice = data.dateChoice || '';
+    if (data.fields) {
+      Object.keys(data.fields).forEach(id => {
+        const el = document.getElementById(id);
+        if (el && data.fields[id]) el.value = data.fields[id];
+      });
+    }
+    // Restore active selections on tiles
+    if (state.est) document.querySelectorAll('#estTiles .tile').forEach(t => { if (t.dataset.est === state.est) t.classList.add('active'); });
+    if (state.pay) document.querySelectorAll('#payTiles .pay-tile').forEach(t => { if (t.dataset.pay === state.pay) t.classList.add('active'); });
+  } catch (e) { /* parse fail */ }
+}
+
+function clearSession() {
+  try { localStorage.removeItem(SESSION_KEY); } catch (e) {}
+  state.selected = {}; state.est = ''; state.pay = ''; state.dateChoice = '';
+  SESSION_FIELDS.forEach(id => { const el = document.getElementById(id); if (el) el.value = ''; });
+  document.querySelectorAll('.active').forEach(t => { if (t.classList.contains('tile') || t.classList.contains('pay-tile') || t.classList.contains('date-btn')) t.classList.remove('active'); });
+}
+
+function fmtPrice(n) { return n.toFixed(2).replace('.', ',') + ' €'; }
+function fmtKg(n) { return n.toFixed(2).replace('.', ',') + ' €/kg'; }
+
+// ============ RENDER PRODUITS ============
+function renderProducts() {
+  const grid = document.getElementById('productsGrid');
+  const search = state.search.toLowerCase();
+  const filtered = CATALOG.filter(p => {
+    if (state.cat !== 'all' && p.cat !== state.cat) return false;
+    if (search && !p.name.toLowerCase().includes(search) && !p.origin.toLowerCase().includes(search)) return false;
+    return true;
+  });
+  const catOrder = { legume: 1, fruit: 2, dattes: 3, aromate: 4 };
+  filtered.sort((a, b) => (catOrder[a.cat] || 9) - (catOrder[b.cat] || 9));
+  const renderCard = (p) => {
+    const sel = state.selected[p.id];
+    const inStock = p.inStock !== false;
+    const isPrecommande = !inStock && p.precommande === true;
+    const isRupture = !inStock && !p.precommande;
+    const canOrder = inStock || isPrecommande;
+    const active = canOrder && sel && sel.qty > 0;
+    const qty = sel ? sel.qty : 0;
+    const effectivePrice = isPrecommande ? Math.round(p.palettePrice * 0.93) : p.palettePrice;
+    const lineTotal = qty * effectivePrice;
+    const pricePerKg = effectivePrice / p.paletteWeight;
+    let topCorner;
+    if (isRupture) {
+      topCorner = '<div class="rupture-badge">🚫 RUPTURE</div>';
+    } else if (isPrecommande) {
+      topCorner = '<div class="precommande-badge">🚢 PRÉCO</div><button class="info-btn" data-info="' + p.id + '" title="Voir détails" style="top:42px;">ℹ</button>';
+    } else {
+      topCorner = '<button class="info-btn" data-info="' + p.id + '" title="Voir les détails">ℹ</button>';
+    }
+    const classes = ['product'];
+    if (active) classes.push('active');
+    if (isPrecommande) classes.push('precommande');
+    if (isRupture) classes.push('rupture');
+    const progress = isPrecommande ? `
+        <div class="progress-block">
+          <div class="progress-label">
+            <span>🚢 Conteneur en cours · anonyme</span>
+            <span><strong>${p.containerReserved}</strong>/${p.containerTarget} palettes</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: ${Math.min(100, p.containerReserved / p.containerTarget * 100)}%"></div>
+          </div>
+          <div class="progress-deadline">${p.containerReserved > 0 ? `⏱️ Clôture dans ${p.containerDaysLeft} jour${p.containerDaysLeft>1?'s':''} · acompte 10 % à réservation` : '🕐 Compte à rebours 10 jours démarre dès la 1ère précommande · acompte 10 %'}</div>
+        </div>
+    ` : '';
+    const priceBlock = isPrecommande ? `
+          <div class="pal-price" style="text-align:right;">
+            <div style="text-decoration: line-through; color: #999; font-size: 12px;">${fmtPrice(p.palettePrice)}</div>
+            <div>${fmtPrice(effectivePrice)} <span class="precommande-discount-pill">−7%</span></div>
+            <span class="pal-per-kg">${fmtKg(pricePerKg)}</span>
+          </div>
+    ` : `
+          <div class="pal-price">
+            ${fmtPrice(effectivePrice)}
+            <span class="pal-per-kg">${fmtKg(pricePerKg)}</span>
+          </div>
+    `;
+    const action = canOrder ? `
+        <div class="qty-row">
+          <span class="qty-label">${isPrecommande ? 'Réserver palettes' : 'Palettes'}</span>
+          <div class="qty-controls">
+            <button class="qty-btn" data-act="minus">−</button>
+            <input type="number" class="qty-input" value="${qty}" min="0">
+            <button class="qty-btn" data-act="plus">+</button>
+          </div>
+          <span class="line-total">${fmtPrice(lineTotal)}</span>
+        </div>
+    ` : `
+        <button class="interest-btn" data-interest="${p.id}">🔔 M'alerter & manifester mon intérêt</button>
+    `;
+    return `
+      <div class="${classes.join(' ')}" data-id="${p.id}">
+        ${topCorner}
+        <div class="product-head">
+          <div class="product-emoji">${p.emoji}</div>
+          <div class="product-info">
+            <p class="product-name">${p.name}</p>
+            <div class="product-origin">🇩🇿 ${p.origin}</div>
+            <span class="product-quality">${p.quality}</span>
+            ${p.sample ? '<div class="sample-badge">🎁 Échantillon 1 palette · test qualité</div>' : ''}
+          </div>
+        </div>
+        ${progress}
+        <div class="palette-info">
+          <div class="pal-icon">📦</div>
+          <div class="pal-spec">
+            <strong>1 palette = ${p.paletteWeight} kg</strong>
+            <div class="pal-detail">${p.paletteDesc}</div>
+          </div>
+          ${priceBlock}
+        </div>
+        ${action}
+      </div>
+    `;
+  };
+  const inStockList = filtered.filter(p => p.inStock !== false);
+  const precommandeList = filtered.filter(p => p.inStock === false && p.precommande === true);
+  const rupturesList = filtered.filter(p => p.inStock === false && p.precommande !== true);
+  let html = '';
+  if (inStockList.length) {
+    html += '<div class="section-divider in-stock">🌟 EN STOCK · DISPONIBLE MAINTENANT</div>';
+    html += inStockList.map(renderCard).join('');
+  }
+  if (precommandeList.length) {
+    html += '<div class="section-divider precommande-section">🚢 PRÉCOMMANDE CONTENEUR · −7% · ACOMPTE 10%</div>';
+    html += precommandeList.map(renderCard).join('');
+  }
+  if (rupturesList.length) {
+    const exp = state.rupturesExpanded;
+    html += `<div class="section-divider rupture collapsible ${exp?'expanded':''}" id="ruptureToggle">🚫 BIENTÔT DISPONIBLE · ${rupturesList.length} produits <span class="arrow">▼</span></div>`;
+    if (exp) {
+      html += rupturesList.map(renderCard).join('');
+    }
+  }
+  grid.innerHTML = html;
+  const ruptureToggle = document.getElementById('ruptureToggle');
+  if (ruptureToggle) {
+    ruptureToggle.addEventListener('click', () => {
+      state.rupturesExpanded = !state.rupturesExpanded;
+      renderProducts();
+    });
+  }
+
+  grid.querySelectorAll('.product').forEach(card => {
+    const id = card.dataset.id;
+    const p = CATALOG.find(x => x.id === id);
+    if (!p) return;
+    // Skip rupture products (no qty controls); allow stock + précommande
+    if (p.inStock === false && p.precommande !== true) return;
+    const mode = (p.inStock === false && p.precommande === true) ? 'precommande' : 'stock';
+    card.querySelectorAll('.qty-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (!state.selected[id]) state.selected[id] = { qty: 0, mode };
+        else state.selected[id].mode = mode;
+        if (btn.dataset.act === 'plus') state.selected[id].qty++;
+        else state.selected[id].qty = Math.max(0, state.selected[id].qty - 1);
+        if (state.selected[id].qty === 0) delete state.selected[id];
+        renderProducts(); updateSummary();
+      });
+    });
+    const input = card.querySelector('.qty-input');
+    if (input) input.addEventListener('change', () => {
+      const v = Math.max(0, parseInt(input.value) || 0);
+      if (v === 0) delete state.selected[id];
+      else {
+        if (!state.selected[id]) state.selected[id] = { qty: v, mode };
+        else { state.selected[id].qty = v; state.selected[id].mode = mode; }
+      }
+      renderProducts(); updateSummary();
+    });
+  });
+
+  // Info buttons
+  grid.querySelectorAll('.info-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showInfoModal(btn.dataset.info);
+    });
+  });
+
+  // Interest buttons (rupture products)
+  grid.querySelectorAll('.interest-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      showInterestModal(btn.dataset.interest);
+    });
+  });
+}
+
+// ============ INFO MODAL ============
+function showInfoModal(id) {
+  const p = CATALOG.find(x => x.id === id);
+  if (!p) return;
+  const d = p.details || {};
+  const html = `
+    <div class="info-modal-header">
+      <div class="info-modal-emoji">${p.emoji}</div>
+      <div class="info-modal-title">
+        <h2>${p.name}</h2>
+        <div class="origin">🇩🇿 ${p.origin}</div>
+        <span class="product-quality">${p.quality}</span>
+      </div>
+    </div>
+    ${d.packaging ? `<div class="info-section"><h3>📦 Conditionnement</h3><p>${d.packaging}</p></div>` : ''}
+    ${d.calibre ? `<div class="info-section"><h3>📏 Calibre & présentation</h3><p>${d.calibre}</p></div>` : ''}
+    ${d.conservation ? `<div class="info-section"><h3>❄️ Conservation</h3><p>${d.conservation}</p></div>` : ''}
+    ${d.saison ? `<div class="info-section"><h3>📅 Saison</h3><p>${d.saison}</p></div>` : ''}
+    ${d.variete ? `<div class="info-section"><h3>🌱 Variété & particularités</h3><p>${d.variete}</p></div>` : ''}
+    ${d.certifications ? `<div class="info-section"><h3>✅ Certifications & traçabilité</h3><p>${d.certifications}</p></div>` : ''}
+    ${d.transport ? `<div class="info-section notes"><h3>🚚 Transport requis</h3><p>${d.transport}</p></div>` : ''}
+    <div class="info-section" style="background:#fff3e0; border-left-color:#ef6c00;">
+      <h3>💰 Tarif palette</h3>
+      <p><strong>${fmtPrice(p.palettePrice)}</strong> la palette de <strong>${p.paletteWeight} kg</strong> · ${fmtKg(p.palettePrice / p.paletteWeight)}<br><span style="color:#888; font-size:12px;">${p.paletteDesc}</span></p>
+    </div>
+  `;
+  document.getElementById('infoModalContent').innerHTML = html;
+  document.getElementById('infoModal').classList.add('show');
+}
+document.getElementById('infoModalClose').addEventListener('click', () => {
+  document.getElementById('infoModal').classList.remove('show');
+});
+document.getElementById('infoModal').addEventListener('click', e => {
+  if (e.target.id === 'infoModal') document.getElementById('infoModal').classList.remove('show');
+});
+
+// ============ INTEREST MODAL (rupture products) ============
+function showInterestModal(id) {
+  const p = CATALOG.find(x => x.id === id);
+  if (!p) return;
+  document.getElementById('interestProductInfo').innerHTML =
+    `<strong>${p.emoji} ${p.name}</strong><br>` +
+    `<span style="color:#c62828; font-size:13px; font-weight:600;">🇩🇿 ${p.origin}</span><br>` +
+    `<span style="color:#666; font-size:12px;">Palette de ${p.paletteWeight} kg · Tarif catalogue : ${fmtPrice(p.palettePrice)} (${fmtKg(p.palettePrice / p.paletteWeight)})</span>`;
+  document.getElementById('interestQty').value = 1;
+  document.getElementById('interestPrice').value = '';
+  document.getElementById('interestPrice').placeholder = `Ex : ${Math.round(p.palettePrice * 0.95)}`;
+  document.getElementById('interestNote').value = '';
+  document.getElementById('interestQtyHint').textContent = `= ${p.paletteWeight} kg`;
+  document.getElementById('interestPriceHint').textContent = '';
+  document.getElementById('interestModal').dataset.productId = id;
+  updateInterestLink();
+  document.getElementById('interestModal').classList.add('show');
+}
+
+function updateInterestLink() {
+  const id = document.getElementById('interestModal').dataset.productId;
+  if (!id) return;
+  const p = CATALOG.find(x => x.id === id);
+  if (!p) return;
+  const qty = parseInt(document.getElementById('interestQty').value) || 0;
+  const price = parseFloat(document.getElementById('interestPrice').value) || 0;
+  document.getElementById('interestQtyHint').textContent = qty > 0 ? `= ${qty * p.paletteWeight} kg` : '';
+  document.getElementById('interestPriceHint').textContent = price > 0
+    ? `Soit ${fmtKg(price / p.paletteWeight)} · Total commande : ${fmtPrice(price * qty)}`
+    : '';
+  const msg = buildInterestMessage();
+  document.getElementById('interestWhatsApp').href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
+}
+
+function buildInterestMessage() {
+  const id = document.getElementById('interestModal').dataset.productId;
+  const p = CATALOG.find(x => x.id === id);
+  if (!p) return '';
+  const qty = parseInt(document.getElementById('interestQty').value) || 0;
+  const price = parseFloat(document.getElementById('interestPrice').value) || 0;
+  const note = document.getElementById('interestNote').value;
+  const lines = [];
+  lines.push('🔔 *MANIFESTATION D\'INTÉRÊT — NUMIDIA FRESH* 🇩🇿');
+  lines.push('');
+  lines.push(`📦 *Produit* : ${p.emoji} ${p.name}`);
+  lines.push(`📍 Origine : ${p.origin}`);
+  lines.push(`✅ Qualité : ${p.quality}`);
+  lines.push('');
+  lines.push(`📊 *Quantité souhaitée* : ${qty} palette${qty>1?'s':''} (${qty * p.paletteWeight} kg)`);
+  if (price > 0) {
+    lines.push(`💰 *Prix max acceptable* : ${fmtPrice(price)}/palette`);
+    lines.push(`   = ${fmtKg(price / p.paletteWeight)}`);
+    lines.push(`   Total engagé : ${fmtPrice(price * qty)}`);
+  }
+  lines.push('');
+  lines.push('🏬 *Coordonnées*');
+  lines.push(`• Société : ${document.getElementById('bizName').value || '—'}`);
+  lines.push(`• Contact : ${document.getElementById('contactName').value || '—'}`);
+  lines.push(`• Tél : ${document.getElementById('phone').value || '—'}`);
+  lines.push(`• Email : ${document.getElementById('email').value || '—'}`);
+  if (note) {
+    lines.push('');
+    lines.push(`📝 ${note}`);
+  }
+  lines.push('');
+  lines.push('⏱️ Merci de me prévenir dès que disponible.');
+  return lines.join('\n');
+}
+
+document.getElementById('interestQty').addEventListener('input', updateInterestLink);
+document.getElementById('interestPrice').addEventListener('input', updateInterestLink);
+document.getElementById('interestNote').addEventListener('input', updateInterestLink);
+document.getElementById('interestModalClose').addEventListener('click', () => {
+  document.getElementById('interestModal').classList.remove('show');
+});
+document.getElementById('interestModal').addEventListener('click', e => {
+  if (e.target.id === 'interestModal') document.getElementById('interestModal').classList.remove('show');
+});
+
+// ============ LEGAL MODAL (CGV / Mentions / RGPD / Cookies) ============
+const LEGAL_CONTENT = {
+  cgv: `
+    <h2 style="margin-top:0; color:#1b5e20;">📜 Conditions générales de vente</h2>
+    <p style="font-size:11px; color:#888; margin-bottom:16px;">Dernière mise à jour : 2026 · Applicable aux ventes B2B aux professionnels</p>
+
+    <h3>1. Objet</h3>
+    <p>Les présentes CGV régissent les ventes de fruits, légumes et produits agricoles d'origine algérienne entre Numidia Fresh SARL ("le Vendeur") et tout acheteur professionnel ("l'Acheteur"), inscrit au RCS ou disposant d'un SIRET valide.</p>
+
+    <h3>2. Acceptation</h3>
+    <p>La validation d'une commande implique l'acceptation pleine et entière des présentes CGV. Toute commande implique la renonciation par l'Acheteur à ses propres conditions générales d'achat.</p>
+
+    <h3>3. Prix</h3>
+    <p>Les prix sont exprimés en euros HT. La TVA applicable (taux réduit 5,5 % sur produits alimentaires non transformés) est calculée et facturée séparément. Les prix sont sujets à variation selon le cours du marché et la saisonnalité — le tarif applicable est celui en vigueur au moment de la validation de commande.</p>
+
+    <h3>4. Modes de paiement</h3>
+    <p>Paiement immédiat exclusivement, par carte bancaire en ligne (lien sécurisé) ou virement SEPA Instant. Aucun délai de règlement, aucun chèque, aucune espèces au-delà de 1 000 €. La commande n'est mise en préparation qu'après encaissement effectif.</p>
+
+    <h3>5. Précommande conteneur</h3>
+    <p>Pour les produits en mode "Précommande conteneur" (signalés en orange), un acompte de 10 % du montant TTC est exigé à la validation. Le solde de 90 % est dû dès atteinte des 22 palettes nécessaires au remplissage du conteneur (ou à l'expédition).</p>
+    <p><strong>Conditions de remboursement de l'acompte :</strong></p>
+    <ul>
+      <li>Si le conteneur n'atteint pas 22 palettes dans les <strong>10 jours suivant la première précommande</strong> : acompte intégralement remboursé sous 7 jours.</li>
+      <li>Si l'Acheteur se rétracte de sa propre initiative : acompte <strong>non remboursable</strong>.</li>
+    </ul>
+
+    <h3>6. Livraison</h3>
+    <p>Vente à partir d'une palette complète exclusivement. Délai indicatif : 10 à 15 jours ouvrés selon disponibilité produit et formalités douanières. L'Acheteur doit disposer d'un transpalette et d'un quai de déchargement adapté. Toute attente excessive à la livraison peut donner lieu à facturation supplémentaire.</p>
+
+    <h3>7. Transfert de propriété et de risques</h3>
+    <p>Le transfert de propriété intervient au paiement intégral du prix. Les risques (perte, détérioration) sont transférés à l'Acheteur dès remise effective des marchandises au destinataire.</p>
+
+    <h3>8. Conformité et réclamations</h3>
+    <p>Toute réclamation portant sur la qualité, la quantité ou le calibre doit être formulée par écrit (email avec photos) dans un délai de <strong>48 heures ouvrées</strong> après livraison, accompagnée du bon de livraison signé portant les réserves. Au-delà, la marchandise est réputée conforme et acceptée.</p>
+
+    <h3>9. Documents fournis</h3>
+    <p>Chaque livraison s'accompagne : facture officielle avec TVA, bon de livraison, certificat phytosanitaire, Document Administratif Unique (DAU) douanier, numéro de lot pour traçabilité HACCP.</p>
+
+    <h3>10. Force majeure</h3>
+    <p>Toute défaillance imputable à un événement de force majeure (grève, intempérie, blocage douanier, conflit armé, pandémie, etc.) ne pourra engager la responsabilité du Vendeur.</p>
+
+    <h3>11. Données personnelles</h3>
+    <p>Les données collectées sont utilisées pour le traitement et le suivi des commandes. L'Acheteur dispose d'un droit d'accès, de rectification et de suppression (voir Politique RGPD).</p>
+
+    <h3>12. Loi applicable et juridiction</h3>
+    <p>Les présentes CGV sont soumises au droit français. <strong>Tout litige relève de la compétence exclusive du Tribunal de Commerce de Marseille</strong>, nonobstant pluralité de défendeurs ou appel en garantie.</p>
+  `,
+  mentions: `
+    <h2 style="margin-top:0; color:#1b5e20;">📋 Mentions légales</h2>
+
+    <h3>Éditeur du site</h3>
+    <p><strong>Numidia Fresh SARL</strong><br>
+    Société à responsabilité limitée au capital de 5 000 €<br>
+    Siège social : [Adresse à compléter] · 13000 Marseille · France<br>
+    SIRET : 000 000 000 00000<br>
+    RCS Marseille : 000 000 000<br>
+    N° TVA intracommunautaire : FR00 000000000<br>
+    Téléphone : +33 6 00 00 00 00<br>
+    Email : contact@numidiafresh.fr</p>
+
+    <h3>Directeur de la publication</h3>
+    <p>[Nom du gérant à compléter] · gérant de Numidia Fresh SARL</p>
+
+    <h3>Hébergement</h3>
+    <p>Le site est hébergé par Vercel Inc.<br>
+    340 S Lemon Ave #4133 · Walnut, CA 91789 · États-Unis</p>
+
+    <h3>Propriété intellectuelle</h3>
+    <p>L'ensemble des éléments du site (textes, images, structure, code) est la propriété exclusive de Numidia Fresh SARL. Toute reproduction, représentation ou exploitation non autorisée est interdite et passible de poursuites.</p>
+
+    <h3>Crédits</h3>
+    <p>Conception et développement : Numidia Fresh · Émojis Apple/Google · Référencement origine : producteurs partenaires en Algérie.</p>
+  `,
+  rgpd: `
+    <h2 style="margin-top:0; color:#1b5e20;">🔒 Politique de confidentialité (RGPD)</h2>
+    <p style="font-size:11px; color:#888;">Conforme au Règlement (UE) 2016/679 du 27 avril 2016</p>
+
+    <h3>Données collectées</h3>
+    <p>Lors d'une commande ou manifestation d'intérêt, nous collectons : raison sociale, nom et prénom du contact, SIRET, adresse postale, téléphone, email, type d'établissement.</p>
+
+    <h3>Finalités du traitement</h3>
+    <ul>
+      <li>Traitement et suivi des commandes</li>
+      <li>Émission et envoi de factures</li>
+      <li>Communication commerciale (newsletter, offres)</li>
+      <li>Respect des obligations légales et comptables</li>
+    </ul>
+
+    <h3>Base légale</h3>
+    <p>Exécution du contrat de vente (art. 6.1.b RGPD) et obligations légales (art. 6.1.c RGPD).</p>
+
+    <h3>Durée de conservation</h3>
+    <p>Données comptables et fiscales : 10 ans (Code de commerce art. L123-22).<br>
+    Données de prospection commerciale : 3 ans à compter du dernier contact.</p>
+
+    <h3>Destinataires</h3>
+    <p>Les données ne sont communiquées qu'aux services internes nécessaires au traitement (commercial, comptabilité, logistique) et, le cas échéant, à l'administration fiscale et aux autorités douanières.</p>
+
+    <h3>Vos droits</h3>
+    <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+    <ul>
+      <li>Droit d'accès à vos données</li>
+      <li>Droit de rectification</li>
+      <li>Droit à l'effacement ("droit à l'oubli")</li>
+      <li>Droit à la portabilité</li>
+      <li>Droit d'opposition au traitement</li>
+      <li>Droit d'introduire une réclamation auprès de la CNIL</li>
+    </ul>
+    <p>Pour exercer ces droits : <a href="mailto:contact@numidiafresh.fr" style="color:#2e7d32;">contact@numidiafresh.fr</a></p>
+
+    <h3>Sécurité</h3>
+    <p>Les données sont stockées sur des serveurs sécurisés en Union Européenne. Aucune donnée bancaire n'est conservée sur nos serveurs (paiements traités par Stripe/Lydia).</p>
+  `,
+  cookies: `
+    <h2 style="margin-top:0; color:#1b5e20;">🍪 Politique des cookies</h2>
+
+    <h3>Cookies utilisés sur ce site</h3>
+    <p>Nous utilisons exclusivement des <strong>cookies techniques essentiels</strong> au bon fonctionnement du site, dispensés du recueil du consentement (CNIL · article 82 LIL).</p>
+
+    <h3>Détail</h3>
+    <ul>
+      <li><strong>localStorage "numidia_cart"</strong> · sauvegarde temporaire de votre panier (durée 15 jours).</li>
+      <li><strong>localStorage "numidia_overrides_v1"</strong> · réservé au mode administrateur uniquement.</li>
+    </ul>
+
+    <h3>Ce que nous n'utilisons pas</h3>
+    <p>❌ Pas de cookies tiers · ❌ Pas de pixels publicitaires Facebook/Google · ❌ Pas de Google Analytics · ❌ Pas de tracking comportemental.</p>
+
+    <h3>Effacer vos données locales</h3>
+    <p>Vous pouvez à tout moment effacer les données locales via les paramètres de votre navigateur (Préférences → Confidentialité → Effacer les données du site).</p>
+  `
+};
+
+function showLegalModal(type) {
+  const content = LEGAL_CONTENT[type] || '<p>Document non disponible.</p>';
+  document.getElementById('legalModalContent').innerHTML = content;
+  document.getElementById('legalModal').classList.add('show');
+}
+document.getElementById('legalModalClose').addEventListener('click', () => {
+  document.getElementById('legalModal').classList.remove('show');
+});
+document.getElementById('legalModal').addEventListener('click', e => {
+  if (e.target.id === 'legalModal') document.getElementById('legalModal').classList.remove('show');
+});
+
+// ============ FILTERS / SEARCH ============
+document.querySelectorAll('#filters .chip').forEach(c => {
+  c.addEventListener('click', () => {
+    document.querySelectorAll('#filters .chip').forEach(x => x.classList.remove('active'));
+    c.classList.add('active'); state.cat = c.dataset.cat; renderProducts();
+  });
+});
+document.getElementById('search').addEventListener('input', e => { state.search = e.target.value; renderProducts(); });
+
+document.querySelectorAll('#estTiles .tile').forEach(t => {
+  t.addEventListener('click', () => {
+    document.querySelectorAll('#estTiles .tile').forEach(x => x.classList.remove('active'));
+    t.classList.add('active'); state.est = t.dataset.est;
+    saveSession();
+  });
+});
+document.querySelectorAll('#payTiles .pay-tile').forEach(t => {
+  t.addEventListener('click', () => {
+    document.querySelectorAll('#payTiles .pay-tile').forEach(x => x.classList.remove('active'));
+    t.classList.add('active'); state.pay = t.dataset.pay;
+    saveSession();
+  });
+});
+
+// ============ DATES ============
+function renderDates() {
+  const pick = document.getElementById('datePick');
+  const jours = ['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+  const mois = ['Jan','Fév','Mar','Avr','Mai','Juin','Juil','Août','Sep','Oct','Nov','Déc'];
+  const today = new Date();
+  const out = [];
+  let i = 10; // Délai mini 10 jours (transit + dédouanement Algérie → France)
+  while (out.length < 8) {
+    const d = new Date(today.getTime() + i*86400000);
+    if (d.getDay() !== 0) out.push(d);
+    i++;
+    if (i > 25) break;
+  }
+  pick.innerHTML = out.map(d => {
+    const iso = d.toISOString().slice(0,10);
+    return `<div class="date-btn" data-iso="${iso}">
+      <span class="d-day">${jours[d.getDay()]}</span>
+      <span class="d-num">${d.getDate()}</span>
+      <span style="font-size:10px; color:#999;">${mois[d.getMonth()]}</span>
+    </div>`;
+  }).join('');
+  pick.querySelectorAll('.date-btn').forEach(b => {
+    b.addEventListener('click', () => {
+      pick.querySelectorAll('.date-btn').forEach(x => x.classList.remove('active'));
+      b.classList.add('active'); state.dateChoice = b.dataset.iso;
+    });
+  });
+}
+renderDates();
+
+// ============ TOTAUX ============
+function getEffectivePrice(p, mode) {
+  return mode === 'precommande' ? Math.round(p.palettePrice * 0.93) : p.palettePrice;
+}
+function getSubtotalStock() {
+  let total = 0;
+  for (const id in state.selected) {
+    const p = CATALOG.find(x => x.id === id);
+    if (!p) continue;
+    const sel = state.selected[id];
+    if (sel.mode !== 'precommande') total += p.palettePrice * sel.qty;
+  }
+  return total;
+}
+function getSubtotalPrecommande() {
+  let total = 0;
+  for (const id in state.selected) {
+    const p = CATALOG.find(x => x.id === id);
+    if (!p) continue;
+    const sel = state.selected[id];
+    if (sel.mode === 'precommande') total += Math.round(p.palettePrice * 0.93) * sel.qty;
+  }
+  return total;
+}
+function getSubtotal() { return getSubtotalStock() + getSubtotalPrecommande(); }
+function getPaletteCount() { return Object.values(state.selected).reduce((a, s) => a + s.qty, 0); }
+
+function updateSummary() {
+  const subtotalStock = getSubtotalStock();
+  const subtotalPreco = getSubtotalPrecommande();
+  const subtotal = subtotalStock + subtotalPreco;
+  const count = getPaletteCount();
+  const livraison = count >= 2 ? 0 : 80;
+  const tva = subtotal * 0.055;
+  const ttc = subtotal + tva + livraison;
+  const precoTTC = subtotalPreco * 1.055;
+  const acomptePreco = precoTTC * 0.10;
+  const soldePreco = precoTTC * 0.90;
+  const aPayerMaintenant = subtotalStock * 1.055 + livraison + acomptePreco;
+
+  document.getElementById('barCount').textContent = count + ' palette' + (count > 1 ? 's' : '');
+  document.getElementById('barTotal').textContent = fmtPrice(subtotalPreco > 0 ? aPayerMaintenant : ttc);
+
+  const list = document.getElementById('recapList');
+  const totals = document.getElementById('totals');
+  if (count === 0) {
+    list.innerHTML = `<div style="text-align:center; color:#999; padding:20px 0;">Aucune palette sélectionnée 👆</div>`;
+    totals.style.display = 'none';
+  } else {
+    list.innerHTML = Object.keys(state.selected).map(id => {
+      const p = CATALOG.find(x => x.id === id);
+      const sel = state.selected[id];
+      const isPreco = sel.mode === 'precommande';
+      const price = getEffectivePrice(p, sel.mode);
+      const line = price * sel.qty;
+      const badge = isPreco ? ' <span style="background:#ef6c00; color:white; font-size:9px; font-weight:700; padding:1px 5px; border-radius:6px;">PRÉCO −7%</span>' : '';
+      return `<div class="li"><span>${p.emoji} ${p.name}${badge} <strong>×${sel.qty}</strong> <span style="color:#999; font-size:11px;">palette${sel.qty>1?'s':''} de ${p.paletteWeight} kg</span></span><span><strong>${fmtPrice(line)}</strong></span></div>`;
+    }).join('');
+    // Build totals block dynamically
+    let html = '';
+    html += `<div class="row"><span>Sous-total HT</span><span>${fmtPrice(subtotal)}</span></div>`;
+    if (subtotalPreco > 0) {
+      html += `<div class="row" style="color:#ef6c00;"><span style="font-size:12px;">↳ dont précommande HT (−7%)</span><span style="font-size:12px;">${fmtPrice(subtotalPreco)}</span></div>`;
+    }
+    html += `<div class="row"><span>TVA 5,5 % (alimentaire)</span><span>${fmtPrice(tva)}</span></div>`;
+    html += `<div class="row"><span>Livraison</span><span>${livraison === 0 ? 'Offerte ✨ (≥ 2 palettes)' : fmtPrice(livraison)}</span></div>`;
+    html += `<div class="row big"><span>TOTAL TTC</span><span>${fmtPrice(ttc)}</span></div>`;
+    if (subtotalPreco > 0) {
+      html += `<div style="margin-top: 10px; border-top: 1.5px dashed #c8e6c9; padding-top: 10px;">`;
+      html += `<div class="row" style="background:#fff3e0; padding:6px 10px; border-radius:8px; color:#ef6c00;"><span><strong>⚡ À payer maintenant</strong></span><span><strong>${fmtPrice(aPayerMaintenant)}</strong></span></div>`;
+      html += `<div class="row" style="font-size:12px; color:#888;"><span>↳ stock TTC + livraison + acompte 10 % précommande</span><span></span></div>`;
+      html += `<div class="row" style="background:#fff8e1; padding:6px 10px; border-radius:8px; color:#6d4c00; margin-top: 6px;"><span>⏳ Solde précommande (au déclenchement conteneur)</span><span>${fmtPrice(soldePreco)}</span></div>`;
+      html += `</div>`;
+    }
+    document.getElementById('totals').innerHTML = html;
+    totals.style.display = 'block';
+  }
+  document.getElementById('validateBtn').disabled = count === 0;
+  saveSession();
+}
+
+// ============ VALIDATION ============
+const WHATSAPP_NUMBER = '33773514284';
+
+function generateOrderNumber() {
+  const d = new Date();
+  const yy = d.getFullYear().toString().slice(-2);
+  const mm = String(d.getMonth() + 1).padStart(2, '0');
+  const dd = String(d.getDate()).padStart(2, '0');
+  const hh = String(d.getHours()).padStart(2, '0');
+  const mn = String(d.getMinutes()).padStart(2, '0');
+  return `NF-${yy}${mm}${dd}-${hh}${mn}`;
+}
+
+function buildMessage() {
+  const orderNum = state.currentOrderNumber || (state.currentOrderNumber = generateOrderNumber());
+  const lines = [];
+  lines.push('🇩🇿 *NOUVELLE COMMANDE — NUMIDIA FRESH* 📦');
+  lines.push(`*Référence : ${orderNum}*`);
+  lines.push(`📅 Émis le ${new Date().toLocaleString('fr-FR', { dateStyle: 'short', timeStyle: 'short' })}`);
+  lines.push('');
+  lines.push('🏬 *Structure (B2B)*');
+  lines.push(`• Type : ${state.est || '—'}`);
+  lines.push(`• Raison sociale : ${document.getElementById('bizName').value || '—'}`);
+  lines.push(`• Contact : ${document.getElementById('contactName').value || '—'}`);
+  lines.push(`• SIRET / TVA : ${document.getElementById('siret').value || '—'}`);
+  lines.push(`• Tél : ${document.getElementById('phone').value || '—'}`);
+  lines.push(`• Email : ${document.getElementById('email').value || '—'}`);
+  lines.push('');
+  lines.push('📍 *Livraison*');
+  lines.push(`${document.getElementById('addr').value || '—'}`);
+  lines.push(`${document.getElementById('cp').value || ''} ${document.getElementById('ville').value || ''}`);
+  if (document.getElementById('compl').value) lines.push(`Accès : ${document.getElementById('compl').value}`);
+  lines.push(`Date : ${state.dateChoice || '—'} · ${document.getElementById('creneau').value || 'Au choix'}`);
+  lines.push('');
+  lines.push('📦 *Commande · Vente palette · Origine 🇩🇿*');
+  const stockIds = Object.keys(state.selected).filter(id => state.selected[id].mode !== 'precommande');
+  const precoIds = Object.keys(state.selected).filter(id => state.selected[id].mode === 'precommande');
+  let totalWeight = 0;
+  if (stockIds.length) {
+    lines.push('');
+    lines.push('🌟 _En stock — livraison immédiate_');
+    for (const id of stockIds) {
+      const p = CATALOG.find(x => x.id === id);
+      const sel = state.selected[id];
+      const line = p.palettePrice * sel.qty;
+      totalWeight += p.paletteWeight * sel.qty;
+      lines.push(`• ${p.emoji} ${p.name} (${p.origin}) — ${sel.qty} × palette ${p.paletteWeight} kg = ${fmtPrice(line)}`);
+    }
+  }
+  if (precoIds.length) {
+    lines.push('');
+    lines.push('🚢 _Précommande conteneur — −7% · acompte 10%_');
+    for (const id of precoIds) {
+      const p = CATALOG.find(x => x.id === id);
+      const sel = state.selected[id];
+      const price = Math.round(p.palettePrice * 0.93);
+      const line = price * sel.qty;
+      totalWeight += p.paletteWeight * sel.qty;
+      lines.push(`• ${p.emoji} ${p.name} (${p.origin}) — ${sel.qty} × palette ${p.paletteWeight} kg = ${fmtPrice(line)} (prix tarif ${fmtPrice(p.palettePrice)} −7%)`);
+    }
+  }
+  const subtotalStock = getSubtotalStock();
+  const subtotalPreco = getSubtotalPrecommande();
+  const subtotal = subtotalStock + subtotalPreco;
+  const count = getPaletteCount();
+  const livraison = count >= 2 ? 0 : 80;
+  const tva = subtotal * 0.055;
+  const ttc = subtotal + tva + livraison;
+  const precoTTC = subtotalPreco * 1.055;
+  const acomptePreco = precoTTC * 0.10;
+  const soldePreco = precoTTC * 0.90;
+  const aPayerMaintenant = subtotalStock * 1.055 + livraison + acomptePreco;
+  lines.push('');
+  lines.push(`📊 ${count} palette${count>1?'s':''} · ${totalWeight} kg`);
+  lines.push('');
+  lines.push('💰 *Détail tarifaire*');
+  lines.push(`Sous-total HT : ${fmtPrice(subtotal)}`);
+  if (subtotalPreco > 0) lines.push(`  ↳ dont précommande HT : ${fmtPrice(subtotalPreco)}`);
+  lines.push(`TVA 5,5% : ${fmtPrice(tva)}`);
+  lines.push(`Livraison : ${livraison === 0 ? 'OFFERTE' : fmtPrice(livraison)}`);
+  lines.push(`*TOTAL TTC : ${fmtPrice(ttc)}*`);
+  if (subtotalPreco > 0) {
+    lines.push('');
+    lines.push('⚡ *À payer maintenant* : ' + fmtPrice(aPayerMaintenant));
+    lines.push('   _(stock TTC + livraison + acompte 10% précommande)_');
+    lines.push('⏳ Solde précommande : ' + fmtPrice(soldePreco));
+    lines.push('   _(à régler au déclenchement du conteneur · délai max 10 jours)_');
+  }
+  lines.push('');
+  lines.push(`💳 Paiement : ${state.pay === 'cb' ? 'CB en ligne (IMMÉDIAT)' : state.pay === 'sepa' ? 'Virement SEPA Instant (IMMÉDIAT)' : '—'}`);
+  if (document.getElementById('note').value) {
+    lines.push('');
+    lines.push(`📝 Note : ${document.getElementById('note').value}`);
+  }
+  return lines.join('\n');
+}
+
+document.getElementById('validateBtn').addEventListener('click', () => {
+  const msg = buildMessage();
+  document.getElementById('modalRecap').textContent = msg;
+  document.getElementById('modalOrderNumber').innerHTML = '📋 Référence commande : <strong style="font-size:15px;">' + state.currentOrderNumber + '</strong><br><span style="font-size:11px; color:#666;">À rappeler dans toute correspondance · Émis le ' + new Date().toLocaleString('fr-FR', { dateStyle: 'short', timeStyle: 'short' }) + '</span>';
+  const encoded = encodeURIComponent(msg);
+  document.getElementById('waLink').href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encoded}`;
+  document.getElementById('smsLink').href = `sms:+${WHATSAPP_NUMBER}?body=${encoded}`;
+  document.getElementById('modal').classList.add('show');
+});
+document.getElementById('modalClose').addEventListener('click', () => { document.getElementById('modal').classList.remove('show'); });
+document.getElementById('modal').addEventListener('click', e => { if (e.target.id === 'modal') document.getElementById('modal').classList.remove('show'); });
+
+// ============ MODE ADMIN ============
+// 🔒 CODE ADMIN — À PERSONNALISER ICI :
+const ADMIN_PIN = '197713';
+
+const urlParams = new URLSearchParams(window.location.search);
+const adminMode = urlParams.get('admin') === '1';
+
+if (adminMode) {
+  const sessionAuth = sessionStorage.getItem('numidia_admin_auth');
+  if (sessionAuth === ADMIN_PIN) {
+    document.getElementById('adminFab').classList.add('visible');
+    document.getElementById('draftBanner').classList.add('hidden');
+  } else {
+    setTimeout(() => {
+      const pin = prompt('🔒 Code admin (4 chiffres) :');
+      if (pin === ADMIN_PIN) {
+        sessionStorage.setItem('numidia_admin_auth', pin);
+        document.getElementById('adminFab').classList.add('visible');
+        document.getElementById('draftBanner').classList.add('hidden');
+      } else if (pin !== null) {
+        alert('❌ Code incorrect.');
+      }
+    }, 300);
+  }
+}
+
+let adminSearchTerm = '';
+
+function renderAdminList() {
+  const list = document.getElementById('adminList');
+  const term = adminSearchTerm.toLowerCase();
+  const filtered = CATALOG.filter(p =>
+    !term || p.name.toLowerCase().includes(term) || p.origin.toLowerCase().includes(term)
+  );
+  list.innerHTML = filtered.map(p => {
+    const inStock = p.inStock !== false;
+    const ov = overrides[p.id] || {};
+    const ch = (field) => ov[field] !== undefined ? 'changed' : '';
+    return `
+      <div class="admin-product ${!inStock ? 'rupture' : ''}" data-id="${p.id}">
+        <div class="admin-product-head">
+          <span class="admin-product-emoji">${p.emoji}</span>
+          <span class="admin-product-name">${p.name}</span>
+          <div class="admin-stock-toggle ${inStock ? '' : 'off'}" data-action="toggle-stock">
+            <span class="toggle-dot"></span>${inStock ? 'En stock' : '🚫 Rupture'}
+          </div>
+        </div>
+        <div class="admin-fields">
+          <div class="admin-field full">
+            <label>Origine</label>
+            <input type="text" data-field="origin" class="${ch('origin')}" value="${p.origin.replace(/"/g,'&quot;')}">
+          </div>
+          <div class="admin-field">
+            <label>Prix palette (€)</label>
+            <input type="number" step="1" data-field="palettePrice" class="${ch('palettePrice')}" value="${p.palettePrice}">
+          </div>
+          <div class="admin-field">
+            <label>Poids palette (kg)</label>
+            <input type="number" step="10" data-field="paletteWeight" class="${ch('paletteWeight')}" value="${p.paletteWeight}">
+          </div>
+          <div class="admin-field full">
+            <label>Description palette</label>
+            <input type="text" data-field="paletteDesc" class="${ch('paletteDesc')}" value="${p.paletteDesc.replace(/"/g,'&quot;')}">
+          </div>
+          <div class="admin-field full">
+            <label>Qualité / catégorie</label>
+            <input type="text" data-field="quality" class="${ch('quality')}" value="${p.quality.replace(/"/g,'&quot;')}">
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  // Bind events
+  list.querySelectorAll('.admin-product').forEach(card => {
+    const id = card.dataset.id;
+    card.querySelector('[data-action="toggle-stock"]').addEventListener('click', () => {
+      const p = CATALOG.find(x => x.id === id);
+      const newStock = p.inStock === false ? true : false;
+      setOverride(id, { inStock: newStock });
+      renderAdminList();
+      renderProducts();
+      updateSummary();
+      updateAdminStats();
+    });
+    card.querySelectorAll('input[data-field]').forEach(input => {
+      input.addEventListener('change', () => {
+        const field = input.dataset.field;
+        let val = input.value;
+        if (field === 'palettePrice' || field === 'paletteWeight') val = parseFloat(val) || 0;
+        setOverride(id, { [field]: val });
+        renderAdminList();
+        renderProducts();
+        updateSummary();
+        updateAdminStats();
+      });
+    });
+  });
+}
+
+function updateAdminStats() {
+  const totalProducts = CATALOG.length;
+  const inStock = CATALOG.filter(p => p.inStock !== false).length;
+  const rupture = totalProducts - inStock;
+  const modified = Object.keys(overrides).length;
+  document.getElementById('adminStats').innerHTML =
+    `<strong>${totalProducts}</strong> produits · <strong>${inStock}</strong> en stock · <strong style="color:#c62828;">${rupture}</strong> rupture · <strong style="color:#ef6c00;">${modified}</strong> modifié(s)`;
+}
+
+document.getElementById('adminFab').addEventListener('click', () => {
+  document.getElementById('adminModal').classList.add('show');
+  renderAdminList();
+  updateAdminStats();
+});
+document.getElementById('adminModalClose').addEventListener('click', () => {
+  document.getElementById('adminModal').classList.remove('show');
+});
+document.getElementById('adminModal').addEventListener('click', e => {
+  if (e.target.id === 'adminModal') document.getElementById('adminModal').classList.remove('show');
+});
+document.getElementById('adminSearch').addEventListener('input', e => {
+  adminSearchTerm = e.target.value;
+  renderAdminList();
+});
+document.getElementById('adminResetBtn').addEventListener('click', () => {
+  if (confirm('Réinitialiser TOUTES les modifications et revenir aux valeurs par défaut ?')) {
+    resetAllOverrides();
+    renderAdminList();
+    renderProducts();
+    updateSummary();
+    updateAdminStats();
+  }
+});
+document.getElementById('adminExportBtn').addEventListener('click', () => {
+  const json = JSON.stringify(overrides, null, 2);
+  navigator.clipboard.writeText(json).then(() => {
+    alert('📋 Modifications copiées dans le presse-papier !\n\nColle-les dans un message pour me les envoyer, je les intégrerai en dur dans le fichier.');
+  }).catch(() => {
+    prompt('Copie ce JSON (Ctrl+C) :', json);
+  });
+});
+
+// ============ INIT ============
+// ============ FIELD VALIDATION ============
+function validateSiret(s) {
+  if (!s) return null;
+  s = s.replace(/\s/g, '');
+  if (!/^\d{14}$/.test(s)) return 'SIRET = 14 chiffres requis';
+  let sum = 0;
+  for (let i = 0; i < 14; i++) {
+    let d = parseInt(s[i]);
+    if (i % 2 === 0) { d *= 2; if (d > 9) d -= 9; }
+    sum += d;
+  }
+  return sum % 10 === 0 ? null : 'SIRET invalide (clé de Luhn incorrecte)';
+}
+function validateEmail(e) {
+  if (!e) return 'Email obligatoire';
+  return /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/.test(e) ? null : 'Format email invalide';
+}
+function validatePhone(p) {
+  if (!p) return 'Téléphone obligatoire';
+  const cleaned = p.replace(/[\s.\-()]/g, '');
+  if (!/^(0|\+33|0033)[1-9]\d{8}$/.test(cleaned)) return 'Téléphone français invalide (10 chiffres, débute par 06/07/0X)';
+  return null;
+}
+function validateCP(c) {
+  if (!c) return 'Code postal obligatoire';
+  return /^\d{5}$/.test(c) ? null : 'Code postal = 5 chiffres';
+}
+function applyFieldValidation(input, error, okMsg) {
+  input.classList.remove('is-valid', 'is-invalid');
+  let msgEl = input.parentElement.querySelector('.field-msg-' + input.id);
+  if (!msgEl) {
+    msgEl = document.createElement('div');
+    msgEl.className = 'field-msg field-msg-' + input.id;
+    input.insertAdjacentElement('afterend', msgEl);
+  }
+  if (error) {
+    input.classList.add('is-invalid');
+    msgEl.textContent = '⚠️ ' + error;
+    msgEl.className = 'field-msg field-msg-' + input.id + ' error show';
+  } else if (input.value) {
+    input.classList.add('is-valid');
+    msgEl.textContent = okMsg || '✓ Valide';
+    msgEl.className = 'field-msg field-msg-' + input.id + ' ok show';
+  } else {
+    msgEl.className = 'field-msg field-msg-' + input.id;
+  }
+}
+const VALIDATORS = {
+  siret: { fn: validateSiret, ok: '✓ SIRET valide' },
+  email: { fn: validateEmail, ok: '✓ Email valide' },
+  phone: { fn: validatePhone, ok: '✓ Téléphone valide' },
+  cp: { fn: validateCP, ok: '✓ Code postal valide' }
+};
+Object.keys(VALIDATORS).forEach(id => {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.addEventListener('blur', () => {
+    applyFieldValidation(el, VALIDATORS[id].fn(el.value), VALIDATORS[id].ok);
+  });
+});
+
+// ============ AUTO-COMPLETION ADRESSE (API gouv.fr) ============
+let addrDebounceTimer = null;
+function setupAddressAutocomplete() {
+  const addrInput = document.getElementById('addr');
+  if (!addrInput) return;
+  const suggBox = document.createElement('div');
+  suggBox.className = 'addr-suggestions';
+  suggBox.style.display = 'none';
+  addrInput.insertAdjacentElement('afterend', suggBox);
+  addrInput.addEventListener('input', () => {
+    clearTimeout(addrDebounceTimer);
+    const q = addrInput.value.trim();
+    if (q.length < 4) { suggBox.style.display = 'none'; suggBox.innerHTML = ''; return; }
+    addrDebounceTimer = setTimeout(async () => {
+      try {
+        const r = await fetch('https://api-adresse.data.gouv.fr/search/?q=' + encodeURIComponent(q) + '&limit=5');
+        const d = await r.json();
+        if (!d.features || !d.features.length) { suggBox.style.display = 'none'; return; }
+        suggBox.innerHTML = d.features.map(f => {
+          const p = f.properties;
+          const name = (p.name || '').replace(/"/g,'&quot;');
+          const city = (p.city || '').replace(/"/g,'&quot;');
+          return '<div class="addr-suggestion" data-name="' + name + '" data-postcode="' + (p.postcode||'') + '" data-city="' + city + '"><div style="font-weight:600;">' + name + '</div><div style="font-size:11px; color:#888;">' + (p.postcode||'') + ' ' + city + '</div></div>';
+        }).join('');
+        suggBox.style.display = 'block';
+        suggBox.querySelectorAll('.addr-suggestion').forEach(it => {
+          it.addEventListener('click', () => {
+            addrInput.value = it.dataset.name;
+            const cpEl = document.getElementById('cp');
+            const villeEl = document.getElementById('ville');
+            cpEl.value = it.dataset.postcode;
+            villeEl.value = it.dataset.city;
+            suggBox.style.display = 'none';
+            applyFieldValidation(cpEl, validateCP(cpEl.value), VALIDATORS.cp.ok);
+            saveSession();
+          });
+        });
+      } catch (e) { suggBox.style.display = 'none'; }
+    }, 280);
+  });
+  document.addEventListener('click', (e) => {
+    if (!suggBox.contains(e.target) && e.target !== addrInput) { suggBox.style.display = 'none'; }
+  });
+}
+setupAddressAutocomplete();
+
+// ============ FAQ ACCORDION ============
+document.querySelectorAll('.faq-question').forEach(q => {
+  q.addEventListener('click', () => q.parentElement.classList.toggle('open'));
+});
+
+// ============ STATS LIVE — COMPTEUR ANIMÉ ============
+function animateStats() {
+  document.querySelectorAll('.stat-num').forEach(el => {
+    const target = parseInt(el.dataset.target) || 0;
+    let cur = 0;
+    const step = Math.max(1, Math.ceil(target / 40));
+    const tick = () => {
+      cur = Math.min(target, cur + step);
+      el.textContent = cur;
+      if (cur < target) requestAnimationFrame(tick);
+    };
+    setTimeout(tick, 250);
+  });
+}
+animateStats();
+
+// ============ CALCULATEUR DE MARGE ============
+function updateCalc() {
+  const palEl = document.getElementById('calcPalettes');
+  const prixEl = document.getElementById('calcPrix');
+  if (!palEl || !prixEl) return;
+  const pal = Math.max(1, Math.min(22, parseInt(palEl.value) || 1));
+  const prix = parseFloat(prixEl.value) || 0;
+  const kg = pal * 1000;
+  const coutImport = 0.92;
+  const cout = kg * coutImport;
+  const ca = kg * prix;
+  const marge = ca - cout;
+  const margePct = ca > 0 ? (marge / ca) * 100 : 0;
+  const fmt = n => Math.round(n).toLocaleString('fr-FR') + ' €';
+  document.getElementById('calcVolume').textContent = kg.toLocaleString('fr-FR') + ' kg';
+  document.getElementById('calcCout').textContent = fmt(cout);
+  document.getElementById('calcCA').textContent = fmt(ca);
+  document.getElementById('calcMarge').innerHTML = fmt(marge) + ' <span style="font-size:13px;">(' + margePct.toFixed(1) + ' %)</span>';
+}
+const palEl = document.getElementById('calcPalettes');
+const prixEl = document.getElementById('calcPrix');
+if (palEl) palEl.addEventListener('input', updateCalc);
+if (prixEl) prixEl.addEventListener('input', updateCalc);
+updateCalc();
+
+// ============ MODE SOMBRE ============
+const DARK_KEY = 'numidia_dark';
+function applyDarkMode(on) {
+  if (on) {
+    document.body.classList.add('dark-mode');
+    const btn = document.getElementById('darkToggle');
+    if (btn) btn.textContent = '☀️';
+  } else {
+    document.body.classList.remove('dark-mode');
+    const btn = document.getElementById('darkToggle');
+    if (btn) btn.textContent = '🌙';
+  }
+}
+let darkPref = false;
+try { darkPref = localStorage.getItem(DARK_KEY) === '1'; } catch (e) {}
+applyDarkMode(darkPref);
+const darkToggle = document.getElementById('darkToggle');
+if (darkToggle) darkToggle.addEventListener('click', () => {
+  const isDark = !document.body.classList.contains('dark-mode');
+  applyDarkMode(isDark);
+  try { localStorage.setItem(DARK_KEY, isDark ? '1' : '0'); } catch (e) {}
+});
+
+// Restore previous session (panier + form) if any
+loadSession();
+
+// Bind save-on-input for form fields
+SESSION_FIELDS.forEach(id => {
+  const el = document.getElementById(id);
+  if (el) el.addEventListener('blur', saveSession);
+});
+
+renderProducts();
+updateSummary();
+</script>
+
+
+</body></html>
